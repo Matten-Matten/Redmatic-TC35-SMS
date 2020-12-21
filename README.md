@@ -44,3 +44,10 @@ Send Message SMS
  6. Messenger_SMSEmfangAbsenderID
  7. Messenger_SMSEmfangText
  8. Messenger_Warteschlange
+
+
+---
+
+![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/TC35%20GSM%20Modul%20Properties%20only.png)
+![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/TC35%20GSM%20Modul%201.png)
+![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/TC35%20GSM%20Modul-Webif.png)
