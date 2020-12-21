@@ -22,7 +22,7 @@ Stop Connection
 `msg.input` = `STOP`
 
 ---
-Reset SIM800
+Reset TC35
 
 `msg.input` = `RESET`
 
