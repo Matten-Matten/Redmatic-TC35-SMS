@@ -3,6 +3,10 @@ Subfow to send and receive SMS
 
 ![Logo](https://cdn.shopify.com/s/files/1/1978/9859/products/img_3048_compact.jpg)
 
+
+![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/gifs/Modul%20Start.gif)
+![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/gifs/sms%20empfangen.gif)
+
 ---
 ## INPUT:
 
@@ -61,3 +65,8 @@ SMS Webinterface:
 ![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/TC35%20GSM%20Modul%20Properties%20only.png)
 ![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/TC35%20GSM%20Modul%201.png)
 ![Logo](https://raw.githubusercontent.com/Matten-Matten/Redmatic-TC35-SMS/main/TC35%20GSM%20Modul-Webif.png)
+
+---
+
+### Changelog:
+- V.1.0.2 - Add SMS API Input
