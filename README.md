@@ -3,6 +3,7 @@ Subfow to send and receive SMS
 
 ![Logo](https://cdn.shopify.com/s/files/1/1978/9859/products/img_3048_compact.jpg)
 
+---
 ## INPUT:
 
 Input from Serial Modul
@@ -34,6 +35,16 @@ Send Message SMS
 `msg.payload` = {"number":"01741234567","message":"Nodered Test SMS"}
 
 ---
+SMS via web API:
+
+`http://`IP-Adresse der CCU`/addons/red/TC35sendSMS?number=`01741234567`&message=`Test Message
+
+---
+SMS Webinterface:
+
+`http://`IP-Adresse der CCU`/addons/red/TC35`
+
+---
 ## OUTPUT
 
  1. to Serial Modul
@@ -44,7 +55,6 @@ Send Message SMS
  6. Messenger_SMSEmfangAbsenderID
  7. Messenger_SMSEmfangText
  8. Messenger_Warteschlange
-
 
 ---
 
