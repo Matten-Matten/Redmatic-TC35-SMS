@@ -1,9 +1,9 @@
 [
     {
-        "id": "ebecf65.ff5b608",
+        "id": "5c14d8ce.7af138",
         "type": "subflow",
         "name": "TC35 GSM Modul",
-        "info": "![Logo](https://cdn.shopify.com/s/files/1/1978/9859/products/img_3048_compact.jpg)\n\n# TC35 GSM Modul Subflow\n\n---\n## INPUT:\n\nInput from Serial Modul\n\n`msg.input` = `SERIAL_INPUT`\n\n`msg.payload` = payload from Serial Modul\n\n---\nStart Connection to GSM Modul\n\n`msg.input` = `START`\n\n---\nStop Connection\n\n`msg.input` = `STOP`\n\n---\nReset SIM800\n\n`msg.input` = `RESET`\n\n---\nSend Message SMS\n\n`msg.input` = `SEND_SMS`\n\n`msg.payload` = {\"number\":\"01741234567\",\"message\":\"Nodered Test SMS\"}\n\n---\n## OUTPUT\n\n 1. to Serial Modul\n 2. Messenger_LetzterPruefStatus\n 3. Messenger_LetzteSignalstaerke\n 4. Messenger_Modus\n 5. Messenger_LetzterSendeStatus\n 6. Messenger_SMSEmfangAbsenderID\n 7. Messenger_SMSEmfangText\n 8. Messenger_Warteschlange",
+        "info": "![Logo](https://cdn.shopify.com/s/files/1/1978/9859/products/img_3048_compact.jpg)\n\n# TC35 GSM Modul Subflow\n\n---\n## INPUT:\n\nInput from Serial Modul\n\n`msg.input` = `SERIAL_INPUT`\n\n`msg.payload` = payload from Serial Modul\n\n---\nStart Connection to GSM Modul\n\n`msg.input` = `START`\n\n---\nStop Connection\n\n`msg.input` = `STOP`\n\n---\nReset TC35\n\n`msg.input` = `RESET`\n\n---\nSend Message SMS\n\n`msg.input` = `SEND_SMS`\n\n`msg.payload` = {\"number\":\"01741234567\",\"message\":\"Nodered Test SMS\"}\n\n---\nSMS via web API:\n\n`http://`IP-Adresse der CCU`/addons/red/TC35sendSMS?number=`01741234567`&message=`Test Message\n\n---\nSMS Webinterface:\n\n`http://`IP-Adresse der CCU`/addons/red/TC35`\n\n---\n## OUTPUT\n\n 1. to Serial Modul\n 2. Messenger_LetzterPruefStatus\n 3. Messenger_LetzteSignalstaerke\n 4. Messenger_Modus\n 5. Messenger_LetzterSendeStatus\n 6. Messenger_SMSEmfangAbsenderID\n 7. Messenger_SMSEmfangText\n 8. Messenger_Warteschlange",
         "category": "SMS",
         "in": [
             {
@@ -11,7 +11,7 @@
                 "y": 3400,
                 "wires": [
                     {
-                        "id": "b3b39815.6ee6d8"
+                        "id": "de9044c.77626b8"
                     }
                 ]
             }
@@ -22,7 +22,7 @@
                 "y": 3460,
                 "wires": [
                     {
-                        "id": "b5f9e123.56d4e",
+                        "id": "1680f7f6.5032b8",
                         "port": 0
                     }
                 ]
@@ -32,43 +32,43 @@
                 "y": 200,
                 "wires": [
                     {
-                        "id": "91902959.f926a8",
+                        "id": "6ae6cda5.b88d74",
                         "port": 0
                     },
                     {
-                        "id": "a77e9ae7.81e098",
+                        "id": "2eeab5de.9788ea",
                         "port": 0
                     },
                     {
-                        "id": "19ee5260.1c2c6e",
+                        "id": "82d57594.39d198",
                         "port": 0
                     },
                     {
-                        "id": "f97dd876.f0d5c8",
+                        "id": "ef2a795b.b19c38",
                         "port": 0
                     },
                     {
-                        "id": "45e181e2.ac083",
+                        "id": "a5e85a5a.b00598",
                         "port": 0
                     },
                     {
-                        "id": "dbe6c2cb.10c3b",
+                        "id": "c02f4ed8.6182",
                         "port": 0
                     },
                     {
-                        "id": "a15957e5.549c58",
+                        "id": "358b7d7e.72dd52",
                         "port": 0
                     },
                     {
-                        "id": "910bdeca.2371d",
+                        "id": "65e1b64a.531328",
                         "port": 0
                     },
                     {
-                        "id": "234ee791.332b78",
+                        "id": "b1c552b6.e4056",
                         "port": 0
                     },
                     {
-                        "id": "4f8eeb26.61deb4",
+                        "id": "d98f7ab.2817a88",
                         "port": 0
                     }
                 ]
@@ -78,15 +78,15 @@
                 "y": 1480,
                 "wires": [
                     {
-                        "id": "44338a78.f84504",
+                        "id": "3c476f0e.7e708",
                         "port": 0
                     },
                     {
-                        "id": "f9fc1e5c.b780e",
+                        "id": "72a98263.2b049c",
                         "port": 0
                     },
                     {
-                        "id": "4978f7a2.dbfc18",
+                        "id": "aeade7f9.517c78",
                         "port": 0
                     }
                 ]
@@ -96,15 +96,15 @@
                 "y": 1600,
                 "wires": [
                     {
-                        "id": "b0301b0a.d1cce8",
+                        "id": "e4d5b6d0.99bb98",
                         "port": 0
                     },
                     {
-                        "id": "4c949c0b.dac5f4",
+                        "id": "9f0ada5.ff20e28",
                         "port": 0
                     },
                     {
-                        "id": "5f69e3c6.dcb4bc",
+                        "id": "90cc717f.a3ced",
                         "port": 0
                     }
                 ]
@@ -114,23 +114,23 @@
                 "y": 2540,
                 "wires": [
                     {
-                        "id": "f5b615a5.25bbb8",
+                        "id": "3e68bce.23d4044",
                         "port": 0
                     },
                     {
-                        "id": "7e1e939e.b2030c",
+                        "id": "74b52f3d.68a45",
                         "port": 0
                     },
                     {
-                        "id": "bcb1005e.f25b8",
+                        "id": "489a3ffa.3efe5",
                         "port": 0
                     },
                     {
-                        "id": "c21b67b8.8ea938",
+                        "id": "5ffbfdf9.c97a64",
                         "port": 0
                     },
                     {
-                        "id": "db17b742.2541b8",
+                        "id": "bc7184ab.3abfc8",
                         "port": 0
                     }
                 ]
@@ -140,7 +140,7 @@
                 "y": 2200,
                 "wires": [
                     {
-                        "id": "1d037572.91a44b",
+                        "id": "2e310e28.abc4a2",
                         "port": 0
                     }
                 ]
@@ -150,7 +150,7 @@
                 "y": 2280,
                 "wires": [
                     {
-                        "id": "4193a5c3.6129fc",
+                        "id": "95af397f.2e8188",
                         "port": 0
                     }
                 ]
@@ -160,7 +160,7 @@
                 "y": 2860,
                 "wires": [
                     {
-                        "id": "70830f32.86b73",
+                        "id": "bb43e281.6fe52",
                         "port": 0
                     }
                 ]
@@ -176,8 +176,18 @@
                     "label": {
                         "en-US": "TC35 GSM Modul Subflow - to send and receive SMS."
                     },
-                    "type": "none",
-                    "opts": {}
+                    "type": "none"
+                }
+            },
+            {
+                "name": "",
+                "type": "str",
+                "value": "Version",
+                "ui": {
+                    "label": {
+                        "en-US": "Version 1.0.2"
+                    },
+                    "type": "none"
                 }
             },
             {
@@ -185,9 +195,10 @@
                 "type": "str",
                 "value": "leer",
                 "ui": {
-                    "type": "none",
-                    "label": {},
-                    "opts": {}
+                    "label": {
+                        "en-US": "________________________________________________________"
+                    },
+                    "type": "none"
                 }
             },
             {
@@ -212,9 +223,10 @@
                 "type": "str",
                 "value": "leer",
                 "ui": {
-                    "type": "none",
-                    "label": {},
-                    "opts": {}
+                    "label": {
+                        "en-US": "________________________________________________________"
+                    },
+                    "type": "none"
                 }
             },
             {
@@ -226,8 +238,7 @@
                     "label": {
                         "en-US": "Wenn PIN deaktiviert, einfach leer lassen!"
                     },
-                    "type": "none",
-                    "opts": {}
+                    "type": "none"
                 }
             },
             {
@@ -252,9 +263,10 @@
                 "type": "str",
                 "value": "leer",
                 "ui": {
-                    "type": "none",
-                    "label": {},
-                    "opts": {}
+                    "label": {
+                        "en-US": "________________________________________________________"
+                    },
+                    "type": "none"
                 }
             },
             {
@@ -266,8 +278,7 @@
                     "label": {
                         "en-US": "Startet bei Systemstart oder Deploy automatisch"
                     },
-                    "type": "none",
-                    "opts": {}
+                    "type": "none"
                 }
             },
             {
@@ -279,8 +290,7 @@
                     "label": {
                         "en-US": "Auto Start"
                     },
-                    "type": "checkbox",
-                    "opts": {}
+                    "type": "checkbox"
                 }
             },
             {
@@ -288,21 +298,33 @@
                 "type": "str",
                 "value": "leer",
                 "ui": {
-                    "type": "none",
-                    "label": {},
-                    "opts": {}
+                    "label": {
+                        "en-US": "________________________________________________________"
+                    },
+                    "type": "none"
                 }
             },
             {
                 "name": "",
                 "type": "str",
-                "value": "Version",
+                "value": "http://IP-Adresse/addons/red/TC35",
+                "ui": {
+                    "icon": "font-awesome/fa-info-circle",
+                    "label": {
+                        "en-US": "Webinterface:   http://{IP-Adresse}/addons/red/TC35"
+                    },
+                    "type": "none"
+                }
+            },
+            {
+                "name": "",
+                "type": "str",
+                "value": "leer",
                 "ui": {
                     "label": {
-                        "en-US": "Version 1.0.1"
+                        "en-US": "________________________________________________________"
                     },
-                    "type": "none",
-                    "opts": {}
+                    "type": "none"
                 }
             },
             {
@@ -314,21 +336,7 @@
                     "label": {
                         "en-US": "Debug"
                     },
-                    "type": "checkbox",
-                    "opts": {}
-                }
-            },
-            {
-                "name": "",
-                "type": "str",
-                "value": "http://IP-Adresse/addons/red/TC35",
-                "ui": {
-                    "icon": "font-awesome/fa-info",
-                    "label": {
-                        "en-US": "Webinterface:   http://{IP-Adresse}/addons/red/TC35"
-                    },
-                    "type": "none",
-                    "opts": {}
+                    "type": "checkbox"
                 }
             }
         ],
@@ -352,16 +360,16 @@
             "y": 3520,
             "wires": [
                 {
-                    "id": "6588523.61cdfac",
+                    "id": "3fd78540.fb8d8a",
                     "port": 0
                 }
             ]
         }
     },
     {
-        "id": "58dbbe07.4dc0d",
+        "id": "cbad5023.f1d26",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "+ \\r",
         "func": "var at_cmd = msg.payload;\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -370,15 +378,15 @@
         "y": 120,
         "wires": [
             [
-                "bd459f7a.ea414",
-                "6e489b8a.6edef4"
+                "798a3dd4.45a534",
+                "3ccde142.4edd5e"
             ]
         ]
     },
     {
-        "id": "d28d93b0.81891",
+        "id": "57af65ae.6b450c",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+ cmd \"\\r\"",
         "func": "var at_cmd = \"AT+\"+msg.payload;\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -387,14 +395,14 @@
         "y": 2360,
         "wires": [
             [
-                "55b12a6e.aaf824"
+                "97e066d8.453fd8"
             ]
         ]
     },
     {
-        "id": "45adb5a0.b20cac",
+        "id": "173f775b.61e389",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "10 Sekunden bis zum vollständigen Einloggen beim Provider warten",
         "info": "",
         "x": 640,
@@ -402,9 +410,9 @@
         "wires": []
     },
     {
-        "id": "f5dba6c6.01bb28",
+        "id": "2de3ea3.584bb16",
         "type": "exec",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "command": "stty -F ",
         "addpay": true,
         "append": "",
@@ -416,18 +424,18 @@
         "y": 3460,
         "wires": [
             [
-                "d6a03ecd.d64ae"
+                "23e1f9fd.5bdb36"
             ],
             [
-                "d6a03ecd.d64ae"
+                "23e1f9fd.5bdb36"
             ],
             []
         ]
     },
     {
-        "id": "d6a03ecd.d64ae",
+        "id": "23e1f9fd.5bdb36",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SET BAUD",
         "active": true,
         "tosidebar": true,
@@ -440,29 +448,29 @@
         "wires": []
     },
     {
-        "id": "7437d0af.247a8",
+        "id": "37c51b10.4634c4",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "#Gelesene SMS löschen",
-        "topic": "settings",
-        "payload": "CMGD=1",
-        "payloadType": "str",
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": "",
+        "topic": "settings",
+        "payload": "CMGD=1",
+        "payloadType": "str",
         "x": 1070,
         "y": 2360,
         "wires": [
             [
-                "d28d93b0.81891"
+                "57af65ae.6b450c"
             ]
         ]
     },
     {
-        "id": "d1e3a4e7.1653f8",
+        "id": "e8367014.48c99",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "CMGL/CMGD",
         "property": "payload",
         "propertyType": "msg",
@@ -485,17 +493,17 @@
         "y": 2220,
         "wires": [
             [
-                "1d037572.91a44b"
+                "2e310e28.abc4a2"
             ],
             [
-                "a5a13719.3b72a8"
+                "32d9373b.3505c8"
             ]
         ]
     },
     {
-        "id": "1d037572.91a44b",
+        "id": "2e310e28.abc4a2",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS_INDEX",
         "func": "var incommingSMS = msg.payload.split(\",\");\nvar SMSindex = parseFloat((incommingSMS[0]).replace(\"+CMGL: \", ''));\nmsg.payload = (incommingSMS[2]).replace(/\"/g, '');\nflow.set('SMS_INPUT',true);\nflow.set('SMS_INDEX',SMSindex);\nreturn msg;",
         "outputs": 1,
@@ -504,35 +512,35 @@
         "y": 2200,
         "wires": [
             [
-                "23db24b.0f355dc"
+                "22f9d007.f6c67"
             ]
         ]
     },
     {
-        "id": "7a3ee96e.427e28",
+        "id": "abe248dc.1ec978",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "d": true,
         "name": "SetInitalVar",
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
         "x": 1910,
         "y": 320,
         "wires": [
             [
-                "3a4d8ca.2f49c74"
+                "67f3adc4.d96044"
             ]
         ]
     },
     {
-        "id": "3a4d8ca.2f49c74",
+        "id": "67f3adc4.d96044",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SetVar",
         "func": "flow.set('SMS_INPUT',false);\nflow.set('SMS_Delete',false);\nflow.set('SMS_SEND',false);\n\nflow.set('GSM_CMEE',false);\nflow.set('GSM_CMGF',false);\nflow.set('GSM_PING',false);\nflow.set('SMS_SEND',false);\n\nflow.set('GSM_POLL',false);",
         "outputs": 1,
@@ -544,9 +552,9 @@
         ]
     },
     {
-        "id": "81cf25f1.288208",
+        "id": "4c584901.473bc8",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Nummer",
         "active": true,
         "tosidebar": true,
@@ -559,9 +567,9 @@
         "wires": []
     },
     {
-        "id": "ab8e0c54.1fd2e",
+        "id": "87b09b58.af2418",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS Input",
         "property": "SMS_INPUT",
         "propertyType": "flow",
@@ -580,17 +588,17 @@
         "y": 2260,
         "wires": [
             [
-                "d1e3a4e7.1653f8"
+                "e8367014.48c99"
             ],
             [
-                "eb75cf82.7e708"
+                "30a167f7.62ff88"
             ]
         ]
     },
     {
-        "id": "eb75cf82.7e708",
+        "id": "30a167f7.62ff88",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS_Delete",
         "func": "msg.payload = msg.payload;\nflow.set('SMS_INPUT',false);\nflow.set('SMS_Delete',true);\nreturn msg;",
         "outputs": 1,
@@ -599,15 +607,15 @@
         "y": 2300,
         "wires": [
             [
-                "8f1fe2b3.c7ec9",
-                "4193a5c3.6129fc"
+                "1b0af50e.da20db",
+                "95af397f.2e8188"
             ]
         ]
     },
     {
-        "id": "8183c92.bfa5c38",
+        "id": "6453b63.a2f3548",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Text",
         "active": true,
         "tosidebar": true,
@@ -620,9 +628,9 @@
         "wires": []
     },
     {
-        "id": "82fb80c3.a9094",
+        "id": "9bb5155b.06f058",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Index NR",
         "active": true,
         "tosidebar": true,
@@ -635,9 +643,9 @@
         "wires": []
     },
     {
-        "id": "8f1fe2b3.c7ec9",
+        "id": "1b0af50e.da20db",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -657,15 +665,15 @@
         "y": 2320,
         "wires": [
             [
-                "6a43ead2.eee5a4",
-                "2df84e4d.808cd2"
+                "790acdfe.ee7ca4",
+                "b3f6000d.845c2"
             ]
         ]
     },
     {
-        "id": "a6ce489c.2a2af8",
+        "id": "b4e07a69.0ad448",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+ CMGD= \"\\r\"",
         "func": "var at_cmd = \"AT+CMGD=\"+msg.payload;\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -674,14 +682,14 @@
         "y": 2400,
         "wires": [
             [
-                "80b17093.02a7c"
+                "e00de907.dccaf8"
             ]
         ]
     },
     {
-        "id": "a5a13719.3b72a8",
+        "id": "32d9373b.3505c8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -704,9 +712,9 @@
         ]
     },
     {
-        "id": "6a43ead2.eee5a4",
+        "id": "790acdfe.ee7ca4",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS Input",
         "property": "SMS_Delete",
         "propertyType": "flow",
@@ -722,14 +730,14 @@
         "y": 2400,
         "wires": [
             [
-                "ae1efb47.cd3238"
+                "1cc6c97.b93cf37"
             ]
         ]
     },
     {
-        "id": "c39d1219.3bb36",
+        "id": "65b6a65d.653c28",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "+CMTI:",
         "property": "payload",
         "propertyType": "msg",
@@ -747,16 +755,16 @@
         "y": 2080,
         "wires": [
             [
-                "8976d0b.17fbd3",
-                "ecb6e849.21bf28",
-                "5b26b7e6.951128"
+                "c69bcac2.438878",
+                "a766a893.4dc598",
+                "5c38b281.ad760c"
             ]
         ]
     },
     {
-        "id": "5b26b7e6.951128",
+        "id": "5c38b281.ad760c",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+ CMGL=\"ALL\" \"\\r\"",
         "func": "var index = msg.payload.split(\",\");\nindex = parseFloat(index[1]);\n\n\n\n\nvar at_cmd = 'AT+CMGL=\"ALL\"'/* + index*/;\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -765,14 +773,14 @@
         "y": 2080,
         "wires": [
             [
-                "1613cc9a.bc2983"
+                "4b9c69fc.a10f98"
             ]
         ]
     },
     {
-        "id": "1f092110.46884f",
+        "id": "ab9af324.7e5b6",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "sende sms",
         "property": "payload",
         "propertyType": "msg",
@@ -810,26 +818,26 @@
         "y": 2620,
         "wires": [
             [
-                "926069ce.02b038"
+                "a9f1d7ae.2726c8"
             ],
             [
-                "70830f32.86b73"
+                "bb43e281.6fe52"
             ],
             [
-                "a85fe6d7.9ed658"
+                "6860fba9.9f3174"
             ],
             [
-                "a85fe6d7.9ed658"
+                "6860fba9.9f3174"
             ],
             [
-                "ff8482a3.d96c3"
+                "94106703.ea50e8"
             ]
         ]
     },
     {
-        "id": "dcf53d31.d81e5",
+        "id": "17799fc2.9fd19",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SEND SMS",
         "active": true,
         "tosidebar": true,
@@ -842,9 +850,9 @@
         "wires": []
     },
     {
-        "id": "a85fe6d7.9ed658",
+        "id": "6860fba9.9f3174",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "property": "SMS_SEND",
         "propertyType": "flow",
@@ -860,15 +868,15 @@
         "y": 2600,
         "wires": [
             [
-                "3c08c40d.32a38c",
-                "7c286be2.acfa14"
+                "bc5e8afb.e32da8",
+                "ed46f022.eb68d"
             ]
         ]
     },
     {
-        "id": "926069ce.02b038",
+        "id": "a9f1d7ae.2726c8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -888,14 +896,14 @@
         "y": 2540,
         "wires": [
             [
-                "602d9973.c386c8"
+                "d7da3858.a8a908"
             ]
         ]
     },
     {
-        "id": "3c08c40d.32a38c",
+        "id": "bc5e8afb.e32da8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -922,14 +930,14 @@
         "y": 2600,
         "wires": [
             [
-                "86c7169.cb4a7e8"
+                "19b6b266.d7336e"
             ]
         ]
     },
     {
-        "id": "ff8482a3.d96c3",
+        "id": "94106703.ea50e8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "property": "SMS_SEND",
         "propertyType": "flow",
@@ -945,15 +953,15 @@
         "y": 2680,
         "wires": [
             [
-                "b051cce8.0b859",
-                "7c286be2.acfa14"
+                "ae1b7d0c.fcee6",
+                "ed46f022.eb68d"
             ]
         ]
     },
     {
-        "id": "b051cce8.0b859",
+        "id": "ae1b7d0c.fcee6",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -980,14 +988,14 @@
         "y": 2680,
         "wires": [
             [
-                "9b8abea4.600fd"
+                "adef1bd7.96ffb8"
             ]
         ]
     },
     {
-        "id": "ecec2346.85a96",
+        "id": "6df214b0.8434fc",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "+CSQ: ",
         "property": "payload",
         "propertyType": "msg",
@@ -1005,14 +1013,14 @@
         "y": 1500,
         "wires": [
             [
-                "b22195dd.868698"
+                "877f4e89.a50e3"
             ]
         ]
     },
     {
-        "id": "b22195dd.868698",
+        "id": "877f4e89.a50e3",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Signalstärke",
         "func": "var signal = msg.payload.split(\",\");\nsignal = parseFloat((signal[0]).replace(\"+CSQ: \", ''));\n\nif (signal < 2) {\n\tmsg.payload = 1;\n\treturn msg;\n}\nelse if (signal >= 2 && signal <=9) {\n\tmsg.payload = 2;\n\treturn msg;\n}\nelse if (signal >= 10 && signal <=14) {\n\tmsg.payload = 3;\n\treturn msg;\n}\nelse if (signal >= 15 && signal <=19) {\n\tmsg.payload = 4;\n\treturn msg;\n}\nelse if (signal >= 20) {\n\tmsg.payload = 5;\n\treturn msg;\n}\nelse if (signal === 99) {\n\tmsg.payload = 99;\n\treturn msg;\n} else {\n\tmsg.payload = 0;\n\treturn msg;\n}",
         "outputs": 1,
@@ -1021,16 +1029,16 @@
         "y": 1500,
         "wires": [
             [
-                "44338a78.f84504",
-                "e1058056.6a3b5",
-                "2bd9be29.f9f612"
+                "3c476f0e.7e708",
+                "800a7abd.1fd458",
+                "5e22c84c.2ed5d8"
             ]
         ]
     },
     {
-        "id": "a482c1f4.fa2d8",
+        "id": "35d803bf.7481ec",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM Signal Stärke",
         "active": true,
         "tosidebar": true,
@@ -1043,9 +1051,9 @@
         "wires": []
     },
     {
-        "id": "9a031f19.a67d7",
+        "id": "8ff4247b.166bf8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "+CREG:",
         "property": "payload",
         "propertyType": "msg",
@@ -1063,30 +1071,32 @@
         "y": 1320,
         "wires": [
             [
-                "4bf058eb.974268"
+                "ca991ee1.a02f"
             ]
         ]
     },
     {
-        "id": "4bf058eb.974268",
+        "id": "ca991ee1.a02f",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "angemeldet",
         "func": "var signal = msg.payload.split(\",\");\nsignal = parseFloat(signal[1]);\n\nif (signal === 5/* || signal === 1*/) {\n\tmsg.payload = true;\n\treturn msg;\n} else {\n\tmsg.payload = false;\n\treturn msg;\n}",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 410,
         "y": 1320,
         "wires": [
             [
-                "5e1eacbd.ac4374"
+                "fdca67a6.2d6d58"
             ]
         ]
     },
     {
-        "id": "5ea67b1f.4c0184",
+        "id": "59e9e839.aff658",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "bei Mobilfunkprovider angemeldet",
         "active": true,
         "tosidebar": true,
@@ -1099,9 +1109,9 @@
         "wires": []
     },
     {
-        "id": "adcd3971.885338",
+        "id": "783a8bd7.1c2eb4",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "60s nach Reset",
         "pauseType": "delay",
         "timeout": "60",
@@ -1117,14 +1127,14 @@
         "y": 1340,
         "wires": [
             [
-                "ad56a4bc.cde7e8"
+                "56e560ef.15428"
             ]
         ]
     },
     {
-        "id": "ad56a4bc.cde7e8",
+        "id": "56e560ef.15428",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CREG? \"\\r\"",
         "func": "var at_cmd = \"AT+CREG?\";\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -1133,14 +1143,14 @@
         "y": 1340,
         "wires": [
             [
-                "2ff9846.355ef7c"
+                "3dec192.b46ffe6"
             ]
         ]
     },
     {
-        "id": "5e1eacbd.ac4374",
+        "id": "fdca67a6.2d6d58",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "true false",
         "property": "payload",
         "propertyType": "msg",
@@ -1159,20 +1169,20 @@
         "y": 1320,
         "wires": [
             [
-                "85c40.1e5843c1",
-                "45e181e2.ac083",
-                "88a044ef.0c3fd8"
+                "8ce3dd66.e6485",
+                "a5e85a5a.b00598",
+                "84a130cf.c94c5"
             ],
             [
-                "dbe6c2cb.10c3b",
-                "6439a33c.f558cc"
+                "c02f4ed8.6182",
+                "51230bfe.793014"
             ]
         ]
     },
     {
-        "id": "95d0a6cd.9bde48",
+        "id": "bbf5ee21.f9839",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "== AT",
         "property": "payload",
         "propertyType": "msg",
@@ -1193,15 +1203,15 @@
         "y": 260,
         "wires": [
             [
-                "5b7319d.ed051e8"
+                "bb6cddfa.eb81b"
             ],
             []
         ]
     },
     {
-        "id": "5b7319d.ed051e8",
+        "id": "bb6cddfa.eb81b",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -1224,9 +1234,9 @@
         ]
     },
     {
-        "id": "f89f28d1.f95038",
+        "id": "ef28cddf.74d3f",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_PING",
         "property": "GSM_PING",
         "propertyType": "flow",
@@ -1247,17 +1257,17 @@
         "y": 280,
         "wires": [
             [
-                "af4c92a5.1a9df"
+                "80ede5a9.d2d138"
             ],
             [
-                "af4c92a5.1a9df"
+                "80ede5a9.d2d138"
             ]
         ]
     },
     {
-        "id": "af4c92a5.1a9df",
+        "id": "80ede5a9.d2d138",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "property": "payload",
         "propertyType": "msg",
@@ -1278,18 +1288,18 @@
         "y": 280,
         "wires": [
             [
-                "3ac6acda.efb424",
-                "ba138219.92006",
-                "9ad76c81.3118c",
-                "f1d466d7.3cefd8"
+                "8637efd4.5fa8d",
+                "ff107d52.dd9b8",
+                "c2a629d6.c7b878",
+                "98e219c8.27f2f8"
             ],
             []
         ]
     },
     {
-        "id": "3ac6acda.efb424",
+        "id": "8637efd4.5fa8d",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "rules": [
             {
@@ -1316,14 +1326,14 @@
         "y": 200,
         "wires": [
             [
-                "674ee4ce.21f28c"
+                "7fcbfc9a.8468b4"
             ]
         ]
     },
     {
-        "id": "b8fb445b.296688",
+        "id": "5e0c56b2.4eb2a8",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM PING",
         "active": true,
         "tosidebar": true,
@@ -1336,9 +1346,9 @@
         "wires": []
     },
     {
-        "id": "da8120b1.9e90e",
+        "id": "f357ea56.e52688",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "6",
@@ -1354,14 +1364,14 @@
         "y": 160,
         "wires": [
             [
-                "6c34f01d.3117"
+                "a529ea11.3ed6d8"
             ]
         ]
     },
     {
-        "id": "6c34f01d.3117",
+        "id": "a529ea11.3ed6d8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "NOT OK",
         "rules": [
             {
@@ -1388,16 +1398,16 @@
         "y": 160,
         "wires": [
             [
-                "674ee4ce.21f28c",
-                "91902959.f926a8",
-                "ee03d2dc.bd999"
+                "7fcbfc9a.8468b4",
+                "6ae6cda5.b88d74",
+                "468de009.a6066"
             ]
         ]
     },
     {
-        "id": "ba138219.92006",
+        "id": "ff107d52.dd9b8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "reset",
         "rules": [
             {
@@ -1417,14 +1427,14 @@
         "y": 180,
         "wires": [
             [
-                "da8120b1.9e90e"
+                "f357ea56.e52688"
             ]
         ]
     },
     {
-        "id": "740dcb44.e19724",
+        "id": "a9b37be7.6bcf88",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "1. START",
         "info": "",
         "x": 60,
@@ -1432,9 +1442,9 @@
         "wires": []
     },
     {
-        "id": "7897df6d.9b4a6",
+        "id": "f362b370.48e34",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CMEE=2 \"\\r\"",
         "func": "var at_cmd = \"AT+CMEE=2\";\nmsg.payload = at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -1443,14 +1453,14 @@
         "y": 640,
         "wires": [
             [
-                "4eff93be.07023c"
+                "408693dd.bd851c"
             ]
         ]
     },
     {
-        "id": "25669454.d3a5bc",
+        "id": "2b259e5.697fe62",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CMEE=2",
         "property": "payload",
         "propertyType": "msg",
@@ -1468,14 +1478,14 @@
         "y": 680,
         "wires": [
             [
-                "7a70c38b.dc866c"
+                "f19a3db5.2a7e8"
             ]
         ]
     },
     {
-        "id": "9abd738e.fd6f1",
+        "id": "29a67db1.c43912",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CMGF=1 \"\\r\"",
         "func": "var at_cmd = \"AT+CMGF=1\";\nmsg.payload = at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -1484,14 +1494,14 @@
         "y": 860,
         "wires": [
             [
-                "dd82aa62.2b47e8"
+                "3f72aa12.1b0606"
             ]
         ]
     },
     {
-        "id": "7a70c38b.dc866c",
+        "id": "f19a3db5.2a7e8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -1514,9 +1524,9 @@
         ]
     },
     {
-        "id": "be95eabc.f1bf98",
+        "id": "365c41dd.8a7fae",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_CMEE",
         "property": "GSM_CMEE",
         "propertyType": "flow",
@@ -1532,14 +1542,14 @@
         "y": 720,
         "wires": [
             [
-                "28b3fdd9.84b962"
+                "3c7c97f8.389448"
             ]
         ]
     },
     {
-        "id": "28b3fdd9.84b962",
+        "id": "3c7c97f8.389448",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "property": "payload",
         "propertyType": "msg",
@@ -1560,18 +1570,18 @@
         "y": 720,
         "wires": [
             [
-                "ef78a0f2.ce807",
-                "c8e6b4c7.d89228"
+                "b2e0e971.cd9398",
+                "d010bdf1.51501"
             ],
             [
-                "a77e9ae7.81e098"
+                "2eeab5de.9788ea"
             ]
         ]
     },
     {
-        "id": "ef78a0f2.ce807",
+        "id": "b2e0e971.cd9398",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -1591,15 +1601,15 @@
         "y": 680,
         "wires": [
             [
-                "216be3b0.dff3ec",
-                "3309ef8.3916d1"
+                "62f1109b.97a56",
+                "7dadaeb7.e3123"
             ]
         ]
     },
     {
-        "id": "26045dc4.78c202",
+        "id": "7b206feb.fd8ba",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CMGF=1",
         "property": "payload",
         "propertyType": "msg",
@@ -1617,14 +1627,14 @@
         "y": 900,
         "wires": [
             [
-                "d7d9ec3d.73118"
+                "a85c9ac3.9094a8"
             ]
         ]
     },
     {
-        "id": "d7d9ec3d.73118",
+        "id": "a85c9ac3.9094a8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -1647,9 +1657,9 @@
         ]
     },
     {
-        "id": "5e072b60.57bdc4",
+        "id": "f64f0e4a.70d6d",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_CMGF",
         "property": "GSM_CMGF",
         "propertyType": "flow",
@@ -1665,14 +1675,14 @@
         "y": 940,
         "wires": [
             [
-                "5634d7c0.7e7368"
+                "ee879f61.39c21"
             ]
         ]
     },
     {
-        "id": "5634d7c0.7e7368",
+        "id": "ee879f61.39c21",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "property": "payload",
         "propertyType": "msg",
@@ -1693,18 +1703,18 @@
         "y": 940,
         "wires": [
             [
-                "a80f2f40.d1a02",
-                "dd20e940.3db758"
+                "d5afc59a.f90208",
+                "87fdc54.380a338"
             ],
             [
-                "19ee5260.1c2c6e"
+                "82d57594.39d198"
             ]
         ]
     },
     {
-        "id": "a80f2f40.d1a02",
+        "id": "d5afc59a.f90208",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -1724,15 +1734,15 @@
         "y": 900,
         "wires": [
             [
-                "874e3038.04586",
-                "58f18366.c0034c"
+                "a52be1b6.4218e",
+                "1d3a86ef.bea9a9"
             ]
         ]
     },
     {
-        "id": "276e93b3.82ba5c",
+        "id": "832cd570.85f778",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CPIN? \"\\r\"",
         "func": "var at_cmd = \"AT+CPIN?\";\nmsg.payload = at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -1741,14 +1751,14 @@
         "y": 1020,
         "wires": [
             [
-                "eee63c6d.2225f"
+                "91a45678.25c908"
             ]
         ]
     },
     {
-        "id": "84563816.eb3078",
+        "id": "d4030905.2c6208",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "+CPIN: READY",
         "property": "payload",
         "propertyType": "msg",
@@ -1769,18 +1779,18 @@
         "y": 1140,
         "wires": [
             [
-                "8883ac57.ee28e",
-                "f4c3830f.4cc0c"
+                "80d083b0.7e187",
+                "adfc666d.05bf48"
             ],
             [
-                "f97dd876.f0d5c8"
+                "ef2a795b.b19c38"
             ]
         ]
     },
     {
-        "id": "8883ac57.ee28e",
+        "id": "80d083b0.7e187",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -1796,14 +1806,14 @@
         "y": 1260,
         "wires": [
             [
-                "7ae2f0ec.f3e2d"
+                "7b44ea7.c828314"
             ]
         ]
     },
     {
-        "id": "7ae2f0ec.f3e2d",
+        "id": "7b44ea7.c828314",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CREG? \"\\r\"",
         "func": "var at_cmd = \"AT+CREG?\";\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -1812,14 +1822,14 @@
         "y": 1260,
         "wires": [
             [
-                "2ff9846.355ef7c"
+                "3dec192.b46ffe6"
             ]
         ]
     },
     {
-        "id": "c5dfea6f.b7c008",
+        "id": "7dc673f5.c8341c",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Extended Errormessage aktiv",
         "active": true,
         "tosidebar": true,
@@ -1832,9 +1842,9 @@
         "wires": []
     },
     {
-        "id": "98879e4f.dd2f2",
+        "id": "45ae4080.72d1d",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "TC35 in SMS-Textmodus versetzt",
         "active": true,
         "tosidebar": true,
@@ -1847,9 +1857,9 @@
         "wires": []
     },
     {
-        "id": "e0c0177b.4fdb88",
+        "id": "baba7105.ea02e",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Sim PIN ok, warte 10 sec.",
         "active": true,
         "tosidebar": true,
@@ -1862,9 +1872,9 @@
         "wires": []
     },
     {
-        "id": "34976a9a.6d27f6",
+        "id": "28e69fc.31bfd6",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CFUN=1,1 \"\\r\"",
         "func": "var at_cmd = \"AT+CFUN=1,1\";\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -1873,14 +1883,14 @@
         "y": 1740,
         "wires": [
             [
-                "5ba82dba.f60664"
+                "fccba3de.5ccc2"
             ]
         ]
     },
     {
-        "id": "2bac1a00.ca7056",
+        "id": "106ec951.a4ac97",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CFUN=1,1",
         "property": "payload",
         "propertyType": "msg",
@@ -1898,15 +1908,15 @@
         "y": 1780,
         "wires": [
             [
-                "22aa64ea.14d1fc",
-                "27c8ae63.0a2aa2"
+                "8d7ba5ed.83ba18",
+                "589c4ca7.87cb34"
             ]
         ]
     },
     {
-        "id": "1efd5204.6d608e",
+        "id": "d94f2d97.85b96",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1922,14 +1932,14 @@
         "y": 1740,
         "wires": [
             [
-                "34976a9a.6d27f6"
+                "28e69fc.31bfd6"
             ]
         ]
     },
     {
-        "id": "b5cb0f01.7ef19",
+        "id": "f1cf3471.eb98e8",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -1945,14 +1955,14 @@
         "y": 640,
         "wires": [
             [
-                "7897df6d.9b4a6"
+                "f362b370.48e34"
             ]
         ]
     },
     {
-        "id": "c8e6b4c7.d89228",
+        "id": "d010bdf1.51501",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -1968,14 +1978,14 @@
         "y": 860,
         "wires": [
             [
-                "9abd738e.fd6f1"
+                "29a67db1.c43912"
             ]
         ]
     },
     {
-        "id": "dd20e940.3db758",
+        "id": "87fdc54.380a338",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -1991,14 +2001,14 @@
         "y": 1060,
         "wires": [
             [
-                "df0223fa.376b"
+                "d3bf6164.5f2a3"
             ]
         ]
     },
     {
-        "id": "7ba00edd.5113",
+        "id": "986ca680.6ee978",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Send SMS to number",
         "func": "var num = msg.payload.number;\nvar at_cmd = \"AT+CMGS=\\\"\"+num+\"\\\"\"; \n\nmsg.payload=at_cmd+\"\\r\";\n//msg.payload.msg =msg.payload.message;\n\nreturn msg;",
         "outputs": "1",
@@ -2007,16 +2017,16 @@
         "y": 3020,
         "wires": [
             [
-                "8e80bb80.c29c88",
-                "bc5c7bad.bca038",
-                "78de9b2.fbcf664"
+                "958542c7.04df3",
+                "58e0669c.b268a8",
+                "621c0d60.502b14"
             ]
         ]
     },
     {
-        "id": "b04f302d.eebaa",
+        "id": "4491519c.ac78",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Send Message",
         "func": "var sms_msg = msg.payload.message;\n\nmsg.payload=sms_msg+\"\\x1A\";\n//msg.payload.msg =msg.payload.message;\n\nreturn msg;",
         "outputs": 1,
@@ -2025,14 +2035,14 @@
         "y": 3100,
         "wires": [
             [
-                "bc5c7bad.bca038"
+                "58e0669c.b268a8"
             ]
         ]
     },
     {
-        "id": "b18beaf5.17d7c8",
+        "id": "9d663792.479168",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Wait for > prompt",
         "pauseType": "delay",
         "timeout": "5",
@@ -2048,14 +2058,14 @@
         "y": 3100,
         "wires": [
             [
-                "7d0f5e1d.07fc6"
+                "98f624aa.e8e1a8"
             ]
         ]
     },
     {
-        "id": "d6f817ae.a2a358",
+        "id": "af8bc6ed.4a0ca8",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Wait 1 sec",
         "pauseType": "delay",
         "timeout": "1",
@@ -2071,14 +2081,14 @@
         "y": 3060,
         "wires": [
             [
-                "985005fe.af4648"
+                "b9d3ef16.c23a7"
             ]
         ]
     },
     {
-        "id": "985005fe.af4648",
+        "id": "b9d3ef16.c23a7",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Write newline",
         "func": "//msg.payload=\"\\r\\n\";\nmsg.payload=\"\\r\";\nreturn msg;",
         "outputs": 1,
@@ -2087,14 +2097,14 @@
         "y": 3060,
         "wires": [
             [
-                "bc5c7bad.bca038"
+                "58e0669c.b268a8"
             ]
         ]
     },
     {
-        "id": "8e80bb80.c29c88",
+        "id": "958542c7.04df3",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -2117,9 +2127,9 @@
         ]
     },
     {
-        "id": "4cc3aab4.d97b54",
+        "id": "69af9b0f.589f24",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "25",
@@ -2135,14 +2145,14 @@
         "y": 2640,
         "wires": [
             [
-                "b051cce8.0b859"
+                "ae1b7d0c.fcee6"
             ]
         ]
     },
     {
-        "id": "7c286be2.acfa14",
+        "id": "ed46f022.eb68d",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "reset",
         "rules": [
             {
@@ -2162,14 +2172,14 @@
         "y": 2640,
         "wires": [
             [
-                "4cc3aab4.d97b54"
+                "69af9b0f.589f24"
             ]
         ]
     },
     {
-        "id": "d81356f.4c21fa8",
+        "id": "8ee1eade.e20818",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CNMI=2,1 \"\\r\"",
         "func": "var at_cmd = \"AT+CNMI=2,1\";\nmsg.payload = at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -2178,14 +2188,14 @@
         "y": 420,
         "wires": [
             [
-                "f87027e1.a04b68"
+                "e4afdb17.659d78"
             ]
         ]
     },
     {
-        "id": "120656c8.4c5ad9",
+        "id": "b13bbe66.d8d9a",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CMGL=\"ALL\" \"\\r\"",
         "func": "var at_cmd = 'AT+CMGL=\"ALL\"';\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -2194,14 +2204,14 @@
         "y": 1980,
         "wires": [
             [
-                "5ddeb36e.b7a6cc"
+                "aaaaa3ed.681ad"
             ]
         ]
     },
     {
-        "id": "85c40.1e5843c1",
+        "id": "8ce3dd66.e6485",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -2217,15 +2227,15 @@
         "y": 1460,
         "wires": [
             [
-                "a0caf765.e91e38",
-                "59aca4d8.cd2b9c"
+                "a62ee938.46fb08",
+                "594d5b6b.2a6a94"
             ]
         ]
     },
     {
-        "id": "a0caf765.e91e38",
+        "id": "a62ee938.46fb08",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CSQ \"\\r\"",
         "func": "var at_cmd = \"AT+CSQ\";\nmsg.payload=at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -2234,14 +2244,14 @@
         "y": 1460,
         "wires": [
             [
-                "6a59dc6d.2efcc4"
+                "7f2fc402.6987ac"
             ]
         ]
     },
     {
-        "id": "4193a5c3.6129fc",
+        "id": "95af397f.2e8188",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "decode",
         "rules": [
             {
@@ -2317,31 +2327,33 @@
         "y": 2280,
         "wires": [
             [
-                "9ce2f58a.5ad748"
+                "5cbb11eb.7236b"
             ]
         ]
     },
     {
-        "id": "ee927a1f.a81d88",
+        "id": "aad70933.02aa28",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Filtern",
         "func": "var antwort = msg.payload;\n\nif (antwort.length > 3 && antwort.length !== \"\"){\n    msg.payload = (antwort.slice(0, antwort.length)).replace(\"\\n\", '').replace(\"\\r\", '');\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 1000,
         "y": 3300,
         "wires": [
             [
-                "a368b80d.246688",
-                "db3b7209.3bd75"
+                "2c3234fc.d938ec",
+                "968ae9cb.7e2568"
             ]
         ]
     },
     {
-        "id": "9ddf9866.1e4068",
+        "id": "6761a0b0.cbbd3",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Sonderzeichen",
         "info": ".replace(\"{\", 'ä').replace(\"|\", 'ö').replace(\"~\", 'ü').replace(\"[\", 'Ä').replace(\"\\\", 'Ö').replace(\"^\", 'Ü').replace(\"\u001e\", 'ß')\n\n.replace(\"{\", 'ä')\n.replace(\"|\", 'ö')\n.replace(\"~\", 'ü')\n.replace(\"[\", 'Ä')\n.replace(\"\\\", 'Ö')\n.replace(\"^\", 'Ü')\n.replace(\"\u001e\", 'ß')",
         "x": 640,
@@ -2349,9 +2361,9 @@
         "wires": []
     },
     {
-        "id": "7d0f5e1d.07fc6",
+        "id": "98f624aa.e8e1a8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "decode",
         "rules": [
             {
@@ -2427,14 +2439,14 @@
         "y": 3100,
         "wires": [
             [
-                "b04f302d.eebaa"
+                "4491519c.ac78"
             ]
         ]
     },
     {
-        "id": "3059cba1.e2a184",
+        "id": "e0fde63e.f33da8",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM MODUL",
         "active": true,
         "tosidebar": true,
@@ -2447,9 +2459,9 @@
         "wires": []
     },
     {
-        "id": "5293491.f9e5db8",
+        "id": "6c175e28.cd29a",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Bereit",
         "rules": [
             {
@@ -2469,14 +2481,14 @@
         "y": 1560,
         "wires": [
             [
-                "ede8eb75.26ae88"
+                "86d9b671.19e498"
             ]
         ]
     },
     {
-        "id": "b0301b0a.d1cce8",
+        "id": "e4d5b6d0.99bb98",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "true",
         "rules": [
             {
@@ -2506,9 +2518,9 @@
         ]
     },
     {
-        "id": "45e181e2.ac083",
+        "id": "a5e85a5a.b00598",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "1",
         "rules": [
             {
@@ -2531,17 +2543,17 @@
         ]
     },
     {
-        "id": "910bdeca.2371d",
+        "id": "65e1b64a.531328",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
         "x": 1410,
         "y": 200,
         "wires": [
@@ -2549,9 +2561,9 @@
         ]
     },
     {
-        "id": "a77e9ae7.81e098",
+        "id": "2eeab5de.9788ea",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "5",
         "rules": [
             {
@@ -2574,9 +2586,9 @@
         ]
     },
     {
-        "id": "19ee5260.1c2c6e",
+        "id": "82d57594.39d198",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "6",
         "rules": [
             {
@@ -2599,9 +2611,9 @@
         ]
     },
     {
-        "id": "dbe6c2cb.10c3b",
+        "id": "c02f4ed8.6182",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "9",
         "rules": [
             {
@@ -2624,9 +2636,9 @@
         ]
     },
     {
-        "id": "f97dd876.f0d5c8",
+        "id": "ef2a795b.b19c38",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "7",
         "rules": [
             {
@@ -2649,9 +2661,9 @@
         ]
     },
     {
-        "id": "cf2fbfdb.9a386",
+        "id": "6a35a54.465175c",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "info": "Nicht verfügbar;\nErfolgreich;\nTC35 Initialisierung-ShellBefehl fehlgeschlagen;\nTC35 Initialisierung fehlgeschlagen;\nModem nicht bereit;\nAktivierung erweiterte Fehlermeldungen fehlgeschlagen;\nUmschalten SMS-Textmodus fehlgeschlagen;\nSIM-Pin wird benötigt;\nSetzen SIM-Pin fehlgeschlagen;\nProvider nicht registiert;\nErmittlung Signalstärke fehlgeschlagen;\nModem Reset fehlgeschlagen;\nSIM-Fehler (siehe Messenger-Log für mehr Details)",
         "x": 1690,
@@ -2659,9 +2671,9 @@
         "wires": []
     },
     {
-        "id": "9c0c3b55.208388",
+        "id": "8dfc56c9.5c05a8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "== 99",
         "property": "payload",
         "propertyType": "msg",
@@ -2684,20 +2696,20 @@
         "y": 1540,
         "wires": [
             [
-                "a15957e5.549c58",
-                "3c956ad6.68a636"
+                "358b7d7e.72dd52",
+                "f8d11c02.4e73c"
             ],
             [
-                "5293491.f9e5db8",
-                "b0301b0a.d1cce8",
-                "11620498.e12c0b"
+                "6c175e28.cd29a",
+                "e4d5b6d0.99bb98",
+                "66564c3c.d34ce4"
             ]
         ]
     },
     {
-        "id": "a15957e5.549c58",
+        "id": "358b7d7e.72dd52",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "10",
         "rules": [
             {
@@ -2720,9 +2732,9 @@
         ]
     },
     {
-        "id": "91902959.f926a8",
+        "id": "6ae6cda5.b88d74",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "4",
         "rules": [
             {
@@ -2745,9 +2757,9 @@
         ]
     },
     {
-        "id": "b5efbd0a.97c82",
+        "id": "86d515b3.ea4068",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "2.  #Extended Errormessage aktivieren",
         "info": "",
         "x": 230,
@@ -2755,25 +2767,25 @@
         "wires": []
     },
     {
-        "id": "b5f9e123.56d4e",
+        "id": "1680f7f6.5032b8",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL OUT",
         "links": [
-            "5ddeb36e.b7a6cc",
-            "5ba82dba.f60664",
-            "55b12a6e.aaf824",
-            "bd459f7a.ea414",
-            "4eff93be.07023c",
-            "80b17093.02a7c",
-            "f87027e1.a04b68",
-            "2ff9846.355ef7c",
-            "6a59dc6d.2efcc4",
-            "dd82aa62.2b47e8",
-            "1613cc9a.bc2983",
-            "eee63c6d.2225f",
-            "bc5c7bad.bca038",
-            "1ab6649.6695f9b"
+            "aaaaa3ed.681ad",
+            "fccba3de.5ccc2",
+            "97e066d8.453fd8",
+            "798a3dd4.45a534",
+            "408693dd.bd851c",
+            "e00de907.dccaf8",
+            "e4afdb17.659d78",
+            "3dec192.b46ffe6",
+            "7f2fc402.6987ac",
+            "3f72aa12.1b0606",
+            "4b9c69fc.a10f98",
+            "91a45678.25c908",
+            "58e0669c.b268a8",
+            "b5852a29.3b2bd8"
         ],
         "x": 195,
         "y": 3460,
@@ -2782,49 +2794,49 @@
         ]
     },
     {
-        "id": "bd459f7a.ea414",
+        "id": "798a3dd4.45a534",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e",
-            "9ce3728f.65814",
-            "d7e4ea09.3a4f18",
-            "336f515c.b297fe"
+            "1680f7f6.5032b8",
+            "60f43634.e7ba28",
+            "5fb52c66.540164",
+            "47a78f6e.36d11"
         ],
         "x": 1215,
         "y": 120,
         "wires": []
     },
     {
-        "id": "f87027e1.a04b68",
+        "id": "e4afdb17.659d78",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 420,
         "wires": []
     },
     {
-        "id": "876acf85.3740a",
+        "id": "72a939df.a67a28",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN normalize",
         "links": [
-            "6875f42f.75d1cc",
-            "16eb4d1e.5a1cd3",
-            "82dbe0f.6bdf82",
-            "4898bbd1.81b294",
-            "e6eadfb0.3e1f8",
-            "52726a4.e40d094",
-            "5eeac166.873bc",
-            "67624b11.92ac04",
-            "a2792ac3.5f3fb8",
-            "5b9f2c47.184234",
-            "8d1225c0.39a818",
+            "afd44365.d9e7",
+            "f0d960cd.6b1be",
+            "278a3ac5.c063d6",
+            "ed021fb9.0ee4e",
+            "f1dc4db8.e5815",
+            "233fbbc6.7437f4",
+            "7c0561dd.8378a",
+            "ea2dac6b.6b2c6",
+            "77591e6c.c0974",
+            "2538d5c4.38509a",
+            "aa9c2450.f49bf8",
             "cb5e8b68.828fb8"
         ],
         "x": 1375,
@@ -2832,60 +2844,60 @@
         "wires": []
     },
     {
-        "id": "6875f42f.75d1cc",
+        "id": "afd44365.d9e7",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 55,
         "y": 280,
         "wires": [
             [
-                "95d0a6cd.9bde48",
-                "f89f28d1.f95038"
+                "bbf5ee21.f9839",
+                "ef28cddf.74d3f"
             ]
         ]
     },
     {
-        "id": "67624b11.92ac04",
+        "id": "ea2dac6b.6b2c6",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 680,
         "wires": [
             [
-                "25669454.d3a5bc",
-                "be95eabc.f1bf98"
+                "2b259e5.697fe62",
+                "365c41dd.8a7fae"
             ]
         ]
     },
     {
-        "id": "82dbe0f.6bdf82",
+        "id": "278a3ac5.c063d6",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 900,
         "wires": [
             [
-                "26045dc4.78c202",
-                "5e072b60.57bdc4"
+                "7b206feb.fd8ba",
+                "f64f0e4a.70d6d"
             ]
         ]
     },
     {
-        "id": "78261a2f.5b8b04",
+        "id": "ee283047.31583",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "3.   TC35 in SMS-Textmodus versetzen",
         "info": "",
         "x": 230,
@@ -2893,9 +2905,9 @@
         "wires": []
     },
     {
-        "id": "b8a3cf91.98038",
+        "id": "4eab450e.c3ab7c",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CNMI=2,1",
         "property": "payload",
         "propertyType": "msg",
@@ -2913,14 +2925,14 @@
         "y": 460,
         "wires": [
             [
-                "21ca33c3.7d41ec"
+                "b1b9e022.c3d09"
             ]
         ]
     },
     {
-        "id": "21ca33c3.7d41ec",
+        "id": "b1b9e022.c3d09",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -2943,9 +2955,9 @@
         ]
     },
     {
-        "id": "e3b798f5.d89898",
+        "id": "ba106a8a.4b4f98",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_CNMI",
         "property": "GSM_CNMI",
         "propertyType": "flow",
@@ -2961,14 +2973,14 @@
         "y": 500,
         "wires": [
             [
-                "755c1b6e.ce4694"
+                "d16ba3b5.b2ee2"
             ]
         ]
     },
     {
-        "id": "755c1b6e.ce4694",
+        "id": "d16ba3b5.b2ee2",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "property": "payload",
         "propertyType": "msg",
@@ -2989,18 +3001,18 @@
         "y": 500,
         "wires": [
             [
-                "92e08e08.83ad6",
-                "b5cb0f01.7ef19"
+                "bdeb79ad.631eb8",
+                "f1cf3471.eb98e8"
             ],
             [
-                "234ee791.332b78"
+                "b1c552b6.e4056"
             ]
         ]
     },
     {
-        "id": "92e08e08.83ad6",
+        "id": "bdeb79ad.631eb8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -3020,15 +3032,15 @@
         "y": 460,
         "wires": [
             [
-                "20e1a70e.676d78",
-                "8ce50ee3.61ef4"
+                "5038ef30.74c2f",
+                "f84cfe08.98bae"
             ]
         ]
     },
     {
-        "id": "8a3c7df.359eb8",
+        "id": "c6e93755.0ccd08",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS Push aktiv",
         "active": true,
         "tosidebar": true,
@@ -3041,9 +3053,9 @@
         "wires": []
     },
     {
-        "id": "f1d466d7.3cefd8",
+        "id": "98e219c8.27f2f8",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -3059,14 +3071,14 @@
         "y": 420,
         "wires": [
             [
-                "d81356f.4c21fa8"
+                "8ee1eade.e20818"
             ]
         ]
     },
     {
-        "id": "322df197.822a3e",
+        "id": "d9a0df0f.7e1c9",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "1. Neue SMS-Nachrichtenanzeigen Push",
         "info": "",
         "x": 240,
@@ -3074,50 +3086,50 @@
         "wires": []
     },
     {
-        "id": "a2792ac3.5f3fb8",
+        "id": "77591e6c.c0974",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 460,
         "wires": [
             [
-                "b8a3cf91.98038",
-                "e3b798f5.d89898"
+                "4eab450e.c3ab7c",
+                "ba106a8a.4b4f98"
             ]
         ]
     },
     {
-        "id": "4eff93be.07023c",
+        "id": "408693dd.bd851c",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 640,
         "wires": []
     },
     {
-        "id": "dd82aa62.2b47e8",
+        "id": "3f72aa12.1b0606",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 860,
         "wires": []
     },
     {
-        "id": "1d8e151e.c93c7b",
+        "id": "dd9e4e5.4debcb",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "4. SIMPin prüfen",
         "info": "",
         "x": 160,
@@ -3125,9 +3137,9 @@
         "wires": []
     },
     {
-        "id": "f1170262.46a33",
+        "id": "97aedd4a.7366f",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CPIN",
         "property": "payload",
         "propertyType": "msg",
@@ -3145,14 +3157,14 @@
         "y": 1100,
         "wires": [
             [
-                "82747ade.57c328"
+                "c0b2b2d.ecb405"
             ]
         ]
     },
     {
-        "id": "82747ade.57c328",
+        "id": "c0b2b2d.ecb405",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -3175,9 +3187,9 @@
         ]
     },
     {
-        "id": "f4c3830f.4cc0c",
+        "id": "adfc666d.05bf48",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "setze flow.GSM_CPIN",
         "rules": [
             {
@@ -3204,15 +3216,15 @@
         "y": 1100,
         "wires": [
             [
-                "49e4f0ef.daa11",
-                "7e2500fb.9e343"
+                "26dafc61.e23c44",
+                "8aa7ae00.19d09"
             ]
         ]
     },
     {
-        "id": "6c900634.e2f8f8",
+        "id": "3b88b735.c3cc88",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_CPIN",
         "property": "GSM_CPIN",
         "propertyType": "flow",
@@ -3228,31 +3240,31 @@
         "y": 1140,
         "wires": [
             [
-                "84563816.eb3078"
+                "d4030905.2c6208"
             ]
         ]
     },
     {
-        "id": "16eb4d1e.5a1cd3",
+        "id": "f0d960cd.6b1be",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 1100,
         "wires": [
             [
-                "6c900634.e2f8f8",
-                "f1170262.46a33"
+                "3b88b735.c3cc88",
+                "97aedd4a.7366f"
             ]
         ]
     },
     {
-        "id": "ce859b6a.2f5558",
+        "id": "5aa6d524.9427bc",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "5. Prüfen ob bei Mobilfunkprovider angemeldet",
         "info": "",
         "x": 260,
@@ -3260,61 +3272,61 @@
         "wires": []
     },
     {
-        "id": "eee63c6d.2225f",
+        "id": "91a45678.25c908",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 1020,
         "wires": []
     },
     {
-        "id": "2ff9846.355ef7c",
+        "id": "3dec192.b46ffe6",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 1260,
         "wires": []
     },
     {
-        "id": "5eeac166.873bc",
+        "id": "7c0561dd.8378a",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 1320,
         "wires": [
             [
-                "9a031f19.a67d7"
+                "8ff4247b.166bf8"
             ]
         ]
     },
     {
-        "id": "6a59dc6d.2efcc4",
+        "id": "7f2fc402.6987ac",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 1460,
         "wires": []
     },
     {
-        "id": "1274564e.7c2daa",
+        "id": "c5b5ad8d.785e",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "6. Signalstärke ermitteln",
         "info": "",
         "x": 190,
@@ -3322,9 +3334,9 @@
         "wires": []
     },
     {
-        "id": "44338a78.f84504",
+        "id": "3c476f0e.7e708",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "99 = 0",
         "rules": [
             {
@@ -3349,9 +3361,9 @@
         ]
     },
     {
-        "id": "3c956ad6.68a636",
+        "id": "f8d11c02.4e73c",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "NICHT",
         "rules": [
             {
@@ -3371,30 +3383,30 @@
         "y": 1520,
         "wires": [
             [
-                "ede8eb75.26ae88"
+                "86d9b671.19e498"
             ]
         ]
     },
     {
-        "id": "5b9f2c47.184234",
+        "id": "2538d5c4.38509a",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 1500,
         "wires": [
             [
-                "ecec2346.85a96"
+                "6df214b0.8434fc"
             ]
         ]
     },
     {
-        "id": "90ba3def.cfd79",
+        "id": "e9fbd468.3aeac8",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "# Modem Reset durchführen ----------------------------------------------------------------------------------------------------------------------------------",
         "info": "",
         "x": 500,
@@ -3402,9 +3414,9 @@
         "wires": []
     },
     {
-        "id": "c68bcc1b.96e43",
+        "id": "9208d6be.0559b8",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "# Modem Reset durchführen ----------------------------------------------------------------------------------------------------------------------------------",
         "info": "",
         "x": 500,
@@ -3412,93 +3424,93 @@
         "wires": []
     },
     {
-        "id": "22aa64ea.14d1fc",
+        "id": "8d7ba5ed.83ba18",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "nach Modem Reset",
         "links": [
-            "8257aacd.6a8898"
+            "bc045147.3256c"
         ],
         "x": 415,
         "y": 1780,
         "wires": []
     },
     {
-        "id": "8257aacd.6a8898",
+        "id": "bc045147.3256c",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": " Mobilfunkprovider angemeldet",
         "links": [
-            "22aa64ea.14d1fc"
+            "8d7ba5ed.83ba18"
         ],
         "x": 775,
         "y": 1340,
         "wires": [
             [
-                "adcd3971.885338"
+                "783a8bd7.1c2eb4"
             ]
         ]
     },
     {
-        "id": "4898bbd1.81b294",
+        "id": "ed021fb9.0ee4e",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 1780,
         "wires": [
             [
-                "2bac1a00.ca7056"
+                "106ec951.a4ac97"
             ]
         ]
     },
     {
-        "id": "b28dacf0.d3238",
+        "id": "42c46a28.415454",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Modem Reset ausführen",
         "links": [
-            "6439a33c.f558cc"
+            "51230bfe.793014"
         ],
         "x": 95,
         "y": 1740,
         "wires": [
             [
-                "1efd5204.6d608e"
+                "d94f2d97.85b96"
             ]
         ]
     },
     {
-        "id": "6439a33c.f558cc",
+        "id": "51230bfe.793014",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "nicht angemeldet",
         "links": [
-            "b28dacf0.d3238"
+            "42c46a28.415454"
         ],
         "x": 735,
         "y": 1340,
         "wires": []
     },
     {
-        "id": "5ba82dba.f60664",
+        "id": "fccba3de.5ccc2",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1275,
         "y": 1740,
         "wires": []
     },
     {
-        "id": "9849d339.77f49",
+        "id": "c6d612d6.b7026",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Modem Reset",
         "active": true,
         "tosidebar": true,
@@ -3511,9 +3523,9 @@
         "wires": []
     },
     {
-        "id": "d5bbf82c.df12f8",
+        "id": "a87c462.2a48db8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "== 99",
         "property": "payload",
         "propertyType": "msg",
@@ -3531,16 +3543,16 @@
         "y": 1980,
         "wires": [
             [
-                "82e86514.f572e8",
-                "120656c8.4c5ad9",
-                "f1085a50.2ce4c8"
+                "6a01dce8.a4fb04",
+                "b13bbe66.d8d9a",
+                "5e668423.97089c"
             ]
         ]
     },
     {
-        "id": "3f6ffce5.fc7274",
+        "id": "56a42b36.949324",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "7.  # SMS Speicher prüfen",
         "info": "",
         "x": 190,
@@ -3548,33 +3560,33 @@
         "wires": []
     },
     {
-        "id": "5ddeb36e.b7a6cc",
+        "id": "aaaaa3ed.681ad",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1275,
         "y": 1980,
         "wires": []
     },
     {
-        "id": "55b12a6e.aaf824",
+        "id": "97e066d8.453fd8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1435,
         "y": 2360,
         "wires": []
     },
     {
-        "id": "5d6566aa.b891a8",
+        "id": "89e6cb69.ce3ad8",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS Speicher prüfen",
         "active": true,
         "tosidebar": true,
@@ -3587,9 +3599,9 @@
         "wires": []
     },
     {
-        "id": "82e86514.f572e8",
+        "id": "6a01dce8.a4fb04",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "checke Eingeganene SMS",
         "rules": [
             {
@@ -3609,14 +3621,14 @@
         "y": 2020,
         "wires": [
             [
-                "70aa2514.f4fe9c"
+                "e615faae.c851b8"
             ]
         ]
     },
     {
-        "id": "bc1020c7.7e891",
+        "id": "47b62949.5ae818",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Incomming SMS PUSH",
         "info": "",
         "x": 180,
@@ -3624,37 +3636,37 @@
         "wires": []
     },
     {
-        "id": "e6eadfb0.3e1f8",
+        "id": "f1dc4db8.e5815",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 2080,
         "wires": [
             [
-                "c39d1219.3bb36"
+                "65b6a65d.653c28"
             ]
         ]
     },
     {
-        "id": "1613cc9a.bc2983",
+        "id": "4b9c69fc.a10f98",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1275,
         "y": 2080,
         "wires": []
     },
     {
-        "id": "44e29d68.f309d4",
+        "id": "c94f90e6.56839",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS INPUT",
         "info": "",
         "x": 150,
@@ -3662,37 +3674,37 @@
         "wires": []
     },
     {
-        "id": "8d1225c0.39a818",
+        "id": "aa9c2450.f49bf8",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 2260,
         "wires": [
             [
-                "ab8e0c54.1fd2e"
+                "87b09b58.af2418"
             ]
         ]
     },
     {
-        "id": "80b17093.02a7c",
+        "id": "e00de907.dccaf8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 2400,
         "wires": []
     },
     {
-        "id": "ae1efb47.cd3238",
+        "id": "1cc6c97.b93cf37",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Wait 1 sec",
         "pauseType": "delay",
         "timeout": "1",
@@ -3708,14 +3720,14 @@
         "y": 2400,
         "wires": [
             [
-                "a6ce489c.2a2af8"
+                "b4e07a69.0ad448"
             ]
         ]
     },
     {
-        "id": "facd6da8.cb149",
+        "id": "c0380c44.33ba5",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Lösche SMS von SIM",
         "info": "",
         "x": 180,
@@ -3723,25 +3735,25 @@
         "wires": []
     },
     {
-        "id": "52726a4.e40d094",
+        "id": "233fbbc6.7437f4",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL IN",
         "links": [
-            "876acf85.3740a"
+            "72a939df.a67a28"
         ],
         "x": 95,
         "y": 2620,
         "wires": [
             [
-                "1f092110.46884f"
+                "ab9af324.7e5b6"
             ]
         ]
     },
     {
-        "id": "88a044ef.0c3fd8",
+        "id": "84a130cf.c94c5",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "rules": [
             {
@@ -3761,15 +3773,15 @@
         "y": 1300,
         "wires": [
             [
-                "e2aeaddc.a4d2b",
-                "7fe9bf48.1e6c1"
+                "f57fd1e7.62bcf",
+                "81b62651.d0ad88"
             ]
         ]
     },
     {
-        "id": "8976d0b.17fbd3",
+        "id": "c69bcac2.438878",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "checke Eingeganene SMS",
         "rules": [
             {
@@ -3789,14 +3801,14 @@
         "y": 2120,
         "wires": [
             [
-                "667a79af.5abb08"
+                "edf98005.7bd32"
             ]
         ]
     },
     {
-        "id": "d12b42a2.672b7",
+        "id": "3d01ceff.3929e2",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS Push",
         "active": true,
         "tosidebar": true,
@@ -3809,9 +3821,9 @@
         "wires": []
     },
     {
-        "id": "602d9973.c386c8",
+        "id": "d7da3858.a8a908",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "sende SMS...",
         "rules": [
             {
@@ -3831,16 +3843,16 @@
         "y": 2540,
         "wires": [
             [
-                "7e1e939e.b2030c",
-                "75e14ae4.af99f4",
-                "c83bc65.499b938"
+                "74b52f3d.68a45",
+                "1a2a3dc3.dffb22",
+                "405bf8b5.810ff8"
             ]
         ]
     },
     {
-        "id": "7e1e939e.b2030c",
+        "id": "74b52f3d.68a45",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "15",
         "rules": [
             {
@@ -3863,9 +3875,9 @@
         ]
     },
     {
-        "id": "c21b67b8.8ea938",
+        "id": "5ffbfdf9.c97a64",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "1",
         "rules": [
             {
@@ -3888,9 +3900,9 @@
         ]
     },
     {
-        "id": "86c7169.cb4a7e8",
+        "id": "19b6b266.d7336e",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS erfolgreich Versand",
         "rules": [
             {
@@ -3910,16 +3922,16 @@
         "y": 2600,
         "wires": [
             [
-                "c21b67b8.8ea938",
-                "75e14ae4.af99f4",
-                "c363cf29.d23f3"
+                "5ffbfdf9.c97a64",
+                "1a2a3dc3.dffb22",
+                "a27ef259.769d1"
             ]
         ]
     },
     {
-        "id": "9b8abea4.600fd",
+        "id": "adef1bd7.96ffb8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS NICHT Versand",
         "rules": [
             {
@@ -3939,16 +3951,16 @@
         "y": 2680,
         "wires": [
             [
-                "bcb1005e.f25b8",
-                "75e14ae4.af99f4",
-                "811c781d.54d9e8"
+                "489a3ffa.3efe5",
+                "1a2a3dc3.dffb22",
+                "db202ef.570f4d"
             ]
         ]
     },
     {
-        "id": "bcb1005e.f25b8",
+        "id": "489a3ffa.3efe5",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "13",
         "rules": [
             {
@@ -3971,17 +3983,17 @@
         ]
     },
     {
-        "id": "f5b615a5.25bbb8",
+        "id": "3e68bce.23d4044",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
         "x": 1370,
         "y": 2480,
         "wires": [
@@ -3989,17 +4001,17 @@
         ]
     },
     {
-        "id": "4c949c0b.dac5f4",
+        "id": "9f0ada5.ff20e28",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
         "x": 1410,
         "y": 1640,
         "wires": [
@@ -4007,9 +4019,9 @@
         ]
     },
     {
-        "id": "b3b39815.6ee6d8",
+        "id": "de9044c.77626b8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "msg.input",
         "property": "input",
         "propertyType": "msg",
@@ -4052,33 +4064,33 @@
         "y": 3400,
         "wires": [
             [
-                "bfda4082.3a9c"
+                "2ff01e58.a37b42"
             ],
             [
-                "36b5448.a7a98bc"
+                "60ec45f6.0ce6cc"
             ],
             [
-                "a8e92a68.61b3b8"
+                "e1e6215e.44411"
             ],
             [
-                "eadcd4ef.63e208"
+                "aa5034b.e83e8c8"
             ],
             [
-                "fff31643.223d28"
+                "ccdfe505.b7dc28"
             ],
             [
-                "a7534b78.7b1cd8"
+                "c491c87e.5cfe58"
             ]
         ],
         "icon": "node-red/inject.svg"
     },
     {
-        "id": "bfda4082.3a9c",
+        "id": "2ff01e58.a37b42",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL_INPUT",
         "links": [
-            "b74e4376.97edb",
+            "299e1e17.e48bf2",
             "d131a127.66928"
         ],
         "x": 675,
@@ -4086,25 +4098,25 @@
         "wires": []
     },
     {
-        "id": "b74e4376.97edb",
+        "id": "299e1e17.e48bf2",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL_INPUT",
         "links": [
-            "bfda4082.3a9c"
+            "2ff01e58.a37b42"
         ],
         "x": 895,
         "y": 3300,
         "wires": [
             [
-                "ee927a1f.a81d88"
+                "aad70933.02aa28"
             ]
         ]
     },
     {
-        "id": "97f08d3f.3124c",
+        "id": "b3c4ff6b.a2332",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SERIAL_INPUT",
         "info": "",
         "x": 780,
@@ -4112,21 +4124,21 @@
         "wires": []
     },
     {
-        "id": "36b5448.a7a98bc",
+        "id": "60ec45f6.0ce6cc",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "START",
         "links": [
-            "1e6f7169.db996f"
+            "603c3310.8562ec"
         ],
         "x": 675,
         "y": 3340,
         "wires": []
     },
     {
-        "id": "a979747c.1c5518",
+        "id": "8722caa8.8d10a8",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "START",
         "info": "",
         "x": 750,
@@ -4134,60 +4146,60 @@
         "wires": []
     },
     {
-        "id": "1e6f7169.db996f",
+        "id": "603c3310.8562ec",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "START",
         "links": [
-            "36b5448.a7a98bc",
-            "58c422b1.7e439c"
+            "60ec45f6.0ce6cc",
+            "ad979a1.466fc68"
         ],
         "x": 95,
         "y": 120,
         "wires": [
             [
-                "4f140e8c.7d4",
-                "56d1b823.a6de98"
+                "6d43bdba.af8ca4",
+                "6cfdc886.b09bd8"
             ]
         ]
     },
     {
-        "id": "8314b468.82c128",
+        "id": "cfe01652.2d58a8",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "RESET",
         "links": [
-            "eadcd4ef.63e208"
+            "aa5034b.e83e8c8"
         ],
         "x": 895,
         "y": 1720,
         "wires": [
             [
-                "34976a9a.6d27f6"
+                "28e69fc.31bfd6"
             ]
         ]
     },
     {
-        "id": "eadcd4ef.63e208",
+        "id": "aa5034b.e83e8c8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "RESET",
         "links": [
-            "8314b468.82c128",
-            "3aa0b6fb.9f1d1a",
-            "336f515c.b297fe",
-            "d7e4ea09.3a4f18",
-            "9ce3728f.65814",
-            "d9e95a61.c84778"
+            "cfe01652.2d58a8",
+            "1e8da29d.9d6a9d",
+            "47a78f6e.36d11",
+            "5fb52c66.540164",
+            "60f43634.e7ba28",
+            "4e34626e.0c3cfc"
         ],
         "x": 675,
         "y": 3420,
         "wires": []
     },
     {
-        "id": "f3866d34.a8ec6",
+        "id": "9bfad4bd.e34b28",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "RESET",
         "info": "",
         "x": 750,
@@ -4195,37 +4207,37 @@
         "wires": []
     },
     {
-        "id": "2de40c6a.4f8e34",
+        "id": "d5e74889.9bc898",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SET_BAUD",
         "links": [
-            "fff31643.223d28"
+            "ccdfe505.b7dc28"
         ],
         "x": 895,
         "y": 3460,
         "wires": [
             [
-                "7e4e43f0.82f56c"
+                "af404e6f.62b6b"
             ]
         ]
     },
     {
-        "id": "fff31643.223d28",
+        "id": "ccdfe505.b7dc28",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SET_BAUD",
         "links": [
-            "2de40c6a.4f8e34"
+            "d5e74889.9bc898"
         ],
         "x": 675,
         "y": 3460,
         "wires": []
     },
     {
-        "id": "79bdb757.dbcad8",
+        "id": "54171c9b.0b6454",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SET_BAUD",
         "info": "",
         "x": 770,
@@ -4233,9 +4245,9 @@
         "wires": []
     },
     {
-        "id": "7e4e43f0.82f56c",
+        "id": "af404e6f.62b6b",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "CONF",
         "rules": [
             {
@@ -4255,14 +4267,14 @@
         "y": 3460,
         "wires": [
             [
-                "4d93c6f8.cb71c8"
+                "977cb508.fd9468"
             ]
         ]
     },
     {
-        "id": "75e14ae4.af99f4",
+        "id": "1a2a3dc3.dffb22",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4278,14 +4290,14 @@
         "y": 2740,
         "wires": [
             [
-                "dcf53d31.d81e5"
+                "17799fc2.9fd19"
             ]
         ]
     },
     {
-        "id": "2df84e4d.808cd2",
+        "id": "b3f6000d.845c2",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4301,14 +4313,14 @@
         "y": 2320,
         "wires": [
             [
-                "82fb80c3.a9094"
+                "9bb5155b.06f058"
             ]
         ]
     },
     {
-        "id": "9ce2f58a.5ad748",
+        "id": "5cbb11eb.7236b",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4324,14 +4336,14 @@
         "y": 2260,
         "wires": [
             [
-                "8183c92.bfa5c38"
+                "6453b63.a2f3548"
             ]
         ]
     },
     {
-        "id": "667a79af.5abb08",
+        "id": "edf98005.7bd32",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4347,14 +4359,14 @@
         "y": 2120,
         "wires": [
             [
-                "d12b42a2.672b7"
+                "3d01ceff.3929e2"
             ]
         ]
     },
     {
-        "id": "70aa2514.f4fe9c",
+        "id": "e615faae.c851b8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4370,14 +4382,14 @@
         "y": 2020,
         "wires": [
             [
-                "5d6566aa.b891a8"
+                "89e6cb69.ce3ad8"
             ]
         ]
     },
     {
-        "id": "27c8ae63.0a2aa2",
+        "id": "589c4ca7.87cb34",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4393,14 +4405,14 @@
         "y": 1780,
         "wires": [
             [
-                "9849d339.77f49"
+                "c6d612d6.b7026"
             ]
         ]
     },
     {
-        "id": "ede8eb75.26ae88",
+        "id": "86d9b671.19e498",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4416,14 +4428,14 @@
         "y": 1540,
         "wires": [
             [
-                "3059cba1.e2a184"
+                "e0fde63e.f33da8"
             ]
         ]
     },
     {
-        "id": "e1058056.6a3b5",
+        "id": "800a7abd.1fd458",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4439,14 +4451,14 @@
         "y": 1500,
         "wires": [
             [
-                "a482c1f4.fa2d8"
+                "35d803bf.7481ec"
             ]
         ]
     },
     {
-        "id": "e2aeaddc.a4d2b",
+        "id": "f57fd1e7.62bcf",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4462,14 +4474,14 @@
         "y": 1300,
         "wires": [
             [
-                "5ea67b1f.4c0184"
+                "59e9e839.aff658"
             ]
         ]
     },
     {
-        "id": "7e2500fb.9e343",
+        "id": "8aa7ae00.19d09",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4485,14 +4497,14 @@
         "y": 1100,
         "wires": [
             [
-                "e0c0177b.4fdb88"
+                "baba7105.ea02e"
             ]
         ]
     },
     {
-        "id": "874e3038.04586",
+        "id": "a52be1b6.4218e",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4508,14 +4520,14 @@
         "y": 900,
         "wires": [
             [
-                "98879e4f.dd2f2"
+                "45ae4080.72d1d"
             ]
         ]
     },
     {
-        "id": "216be3b0.dff3ec",
+        "id": "62f1109b.97a56",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4531,14 +4543,14 @@
         "y": 680,
         "wires": [
             [
-                "c5dfea6f.b7c008"
+                "7dc673f5.c8341c"
             ]
         ]
     },
     {
-        "id": "20e1a70e.676d78",
+        "id": "5038ef30.74c2f",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4554,14 +4566,14 @@
         "y": 460,
         "wires": [
             [
-                "8a3c7df.359eb8"
+                "c6e93755.0ccd08"
             ]
         ]
     },
     {
-        "id": "674ee4ce.21f28c",
+        "id": "7fcbfc9a.8468b4",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -4577,14 +4589,14 @@
         "y": 200,
         "wires": [
             [
-                "b8fb445b.296688"
+                "5e0c56b2.4eb2a8"
             ]
         ]
     },
     {
-        "id": "56d1b823.a6de98",
+        "id": "6cfdc886.b09bd8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT",
         "rules": [
             {
@@ -4604,16 +4616,16 @@
         "y": 120,
         "wires": [
             [
-                "da8120b1.9e90e",
-                "58dbbe07.4dc0d",
-                "41b541f1.1776d"
+                "f357ea56.e52688",
+                "cbad5023.f1d26",
+                "b8767596.71f868"
             ]
         ]
     },
     {
-        "id": "4d93c6f8.cb71c8",
+        "id": "977cb508.fd9468",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "payload",
         "func": "msg.payload = msg.SERIAL + \" cs8 -parenb -cstopb clocal -echo raw speed 9600\";\nreturn msg;",
         "outputs": 1,
@@ -4622,26 +4634,26 @@
         "y": 3460,
         "wires": [
             [
-                "f5dba6c6.01bb28"
+                "2de3ea3.584bb16"
             ]
         ]
     },
     {
-        "id": "a7534b78.7b1cd8",
+        "id": "c491c87e.5cfe58",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SEND_SMS",
         "links": [
-            "c0085404.f04648"
+            "b95a692d.899558"
         ],
         "x": 675,
         "y": 3500,
         "wires": []
     },
     {
-        "id": "65035920.224048",
+        "id": "eb6ac171.23c0c",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SEND_SMS",
         "info": "",
         "x": 770,
@@ -4649,26 +4661,26 @@
         "wires": []
     },
     {
-        "id": "c0085404.f04648",
+        "id": "b95a692d.899558",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SEND_SMS",
         "links": [
-            "a7534b78.7b1cd8",
-            "ce199e70.9b183"
+            "c491c87e.5cfe58",
+            "274d8bff.dac454"
         ],
         "x": 75,
         "y": 3020,
         "wires": [
             [
-                "81b6ab99.8fec58"
+                "58373e4a.1ffe7"
             ]
         ]
     },
     {
-        "id": "a368b80d.246688",
+        "id": "2c3234fc.d938ec",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "d": true,
         "name": "Serial-In",
         "active": true,
@@ -4682,9 +4694,9 @@
         "wires": []
     },
     {
-        "id": "4bb96e52.67ae1",
+        "id": "9c2c4812.ec92a8",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Messenger_LetzterPruefStatus",
         "info": "",
         "x": 1750,
@@ -4692,9 +4704,9 @@
         "wires": []
     },
     {
-        "id": "c685d25c.e25b2",
+        "id": "f5a3368b.848158",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Messenger_LetzteSignalstaerke",
         "info": "",
         "x": 1710,
@@ -4702,9 +4714,9 @@
         "wires": []
     },
     {
-        "id": "9455279b.a0ba68",
+        "id": "cfd8f94c.df8d58",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Messenger_Modus",
         "info": "",
         "x": 1670,
@@ -4712,9 +4724,9 @@
         "wires": []
     },
     {
-        "id": "6c70f603.e4e418",
+        "id": "42285ef1.64f01",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Messenger_LetzterSendeStatus",
         "info": "",
         "x": 1670,
@@ -4722,9 +4734,9 @@
         "wires": []
     },
     {
-        "id": "c53d7a7a.6c7258",
+        "id": "dda500a0.ce1ee",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Messenger_SMSEmfangAbsenderID",
         "info": "",
         "x": 1680,
@@ -4732,9 +4744,9 @@
         "wires": []
     },
     {
-        "id": "1299b178.96397f",
+        "id": "9e427404.0088c8",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Messenger_SMSEmfangText",
         "info": "",
         "x": 1660,
@@ -4742,17 +4754,17 @@
         "wires": []
     },
     {
-        "id": "f9fc1e5c.b780e",
+        "id": "72a98263.2b049c",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
         "x": 1410,
         "y": 1460,
         "wires": [
@@ -4760,9 +4772,9 @@
         ]
     },
     {
-        "id": "234ee791.332b78",
+        "id": "b1c552b6.e4056",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "5",
         "rules": [
             {
@@ -4785,9 +4797,9 @@
         ]
     },
     {
-        "id": "9ad76c81.3118c",
+        "id": "c2a629d6.c7b878",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -4810,9 +4822,9 @@
         ]
     },
     {
-        "id": "41b541f1.1776d",
+        "id": "b8767596.71f868",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -4835,27 +4847,27 @@
         ]
     },
     {
-        "id": "9ce3728f.65814",
+        "id": "60f43634.e7ba28",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "0",
         "links": [
-            "bd459f7a.ea414",
-            "a8e92a68.61b3b8",
-            "eadcd4ef.63e208"
+            "798a3dd4.45a534",
+            "e1e6215e.44411",
+            "aa5034b.e83e8c8"
         ],
         "x": 1315,
         "y": 240,
         "wires": [
             [
-                "4f8eeb26.61deb4"
+                "d98f7ab.2817a88"
             ]
         ]
     },
     {
-        "id": "4f8eeb26.61deb4",
+        "id": "d98f7ab.2817a88",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "0",
         "rules": [
             {
@@ -4878,27 +4890,27 @@
         ]
     },
     {
-        "id": "d7e4ea09.3a4f18",
+        "id": "5fb52c66.540164",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "0",
         "links": [
-            "bd459f7a.ea414",
-            "a8e92a68.61b3b8",
-            "eadcd4ef.63e208"
+            "798a3dd4.45a534",
+            "e1e6215e.44411",
+            "aa5034b.e83e8c8"
         ],
         "x": 1315,
         "y": 1420,
         "wires": [
             [
-                "4978f7a2.dbfc18"
+                "aeade7f9.517c78"
             ]
         ]
     },
     {
-        "id": "4978f7a2.dbfc18",
+        "id": "aeade7f9.517c78",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "0",
         "rules": [
             {
@@ -4921,27 +4933,27 @@
         ]
     },
     {
-        "id": "336f515c.b297fe",
+        "id": "47a78f6e.36d11",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "0",
         "links": [
-            "bd459f7a.ea414",
-            "a8e92a68.61b3b8",
-            "eadcd4ef.63e208"
+            "798a3dd4.45a534",
+            "e1e6215e.44411",
+            "aa5034b.e83e8c8"
         ],
         "x": 1275,
         "y": 2440,
         "wires": [
             [
-                "db17b742.2541b8"
+                "bc7184ab.3abfc8"
             ]
         ]
     },
     {
-        "id": "db17b742.2541b8",
+        "id": "bc7184ab.3abfc8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "0",
         "rules": [
             {
@@ -4964,9 +4976,9 @@
         ]
     },
     {
-        "id": "70830f32.86b73",
+        "id": "bb43e281.6fe52",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "leer",
         "rules": [
             {
@@ -4989,29 +5001,29 @@
         ]
     },
     {
-        "id": "f15114b5.9aa108",
+        "id": "728ff2ec.089eec",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Poll",
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
         "repeat": "60",
         "crontab": "",
         "once": true,
         "onceDelay": "5",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
         "x": 410,
         "y": 1420,
         "wires": [
             [
-                "5bf749b4.ee2e78"
+                "d0c117dd.3e6cf8"
             ]
         ]
     },
     {
-        "id": "5bf749b4.ee2e78",
+        "id": "d0c117dd.3e6cf8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_POLL",
         "property": "GSM_POLL",
         "propertyType": "flow",
@@ -5027,14 +5039,14 @@
         "y": 1420,
         "wires": [
             [
-                "a0caf765.e91e38"
+                "a62ee938.46fb08"
             ]
         ]
     },
     {
-        "id": "6e489b8a.6edef4",
+        "id": "3ccde142.4edd5e",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5057,9 +5069,9 @@
         ]
     },
     {
-        "id": "59aca4d8.cd2b9c",
+        "id": "594d5b6b.2a6a94",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5082,9 +5094,9 @@
         ]
     },
     {
-        "id": "66e7e2a2.a0a43c",
+        "id": "22a9d28f.300b0e",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5107,9 +5119,9 @@
         ]
     },
     {
-        "id": "2bd9be29.f9f612",
+        "id": "5e22c84c.2ed5d8",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "GSM_CSQ",
         "property": "GSM_CSQ",
         "propertyType": "flow",
@@ -5125,16 +5137,16 @@
         "y": 1540,
         "wires": [
             [
-                "9c0c3b55.208388",
-                "d5bbf82c.df12f8",
-                "66e7e2a2.a0a43c"
+                "8dfc56c9.5c05a8",
+                "a87c462.2a48db8",
+                "22a9d28f.300b0e"
             ]
         ]
     },
     {
-        "id": "81b6ab99.8fec58",
+        "id": "58373e4a.1ffe7",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "nicht leer",
         "property": "payload.message",
         "propertyType": "msg",
@@ -5150,16 +5162,16 @@
         "y": 3020,
         "wires": [
             [
-                "7ba00edd.5113",
-                "d6f817ae.a2a358",
-                "b18beaf5.17d7c8"
+                "986ca680.6ee978",
+                "af8bc6ed.4a0ca8",
+                "9d663792.479168"
             ]
         ]
     },
     {
-        "id": "8b448a42.cc5138",
+        "id": "e87ab3dc.f612d",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS INPUT",
         "info": "",
         "x": 130,
@@ -5167,9 +5179,9 @@
         "wires": []
     },
     {
-        "id": "4f140e8c.7d4",
+        "id": "6d43bdba.af8ca4",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status Start",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️ Starte...\"};\nreturn msg;",
         "outputs": 1,
@@ -5178,59 +5190,59 @@
         "y": 80,
         "wires": [
             [
-                "9aac2165.71552"
+                "1ca47e9c.cce531"
             ]
         ]
     },
     {
-        "id": "673e3b47.767d24",
+        "id": "70532deb.646ee4",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "9aac2165.71552",
-            "f44b8fc4.110af",
-            "e8cd123f.84245",
-            "66872fae.1146c",
-            "95c20b75.adc518",
-            "2572d19f.8cae6e",
-            "860ed964.b61de8",
+            "1ca47e9c.cce531",
+            "de511c75.958c3",
+            "17faef68.f41da1",
+            "b64fa04.3dc8c6",
+            "8fc5bf45.679a2",
+            "f9fc87ef.243738",
+            "90be421e.98cdc",
             "2c2e35ed.3d5d1a",
-            "d0ab7e72.100fb",
-            "5b2a890e.a91f88",
-            "4c150ba9.6bee24",
-            "87fc6496.62e698",
-            "b37674eb.aad858",
+            "5cb6a04c.7d3cd",
+            "cea9c3a4.ba80b",
+            "d8fead68.7a56f",
+            "32f947d0.380c88",
+            "4dcd5e45.0128",
             "f84e5225.d2d74",
-            "972f6319.a34f4",
+            "fe869a17.decc68",
             "865c3944.51acf8",
-            "659ee8fc.c911f8",
-            "dfbd136e.3558d"
+            "6162490c.ddbbf8",
+            "64957964.7f33e8"
         ],
         "x": 195,
         "y": 3520,
         "wires": [
             [
-                "6588523.61cdfac"
+                "3fd78540.fb8d8a"
             ]
         ]
     },
     {
-        "id": "9aac2165.71552",
+        "id": "1ca47e9c.cce531",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 355,
         "y": 80,
         "wires": []
     },
     {
-        "id": "8ce50ee3.61ef4",
+        "id": "f84cfe08.98bae",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️️️️️️️️⚫️⚫️⚫️⚫️⚫️⚫️⚫️ SMS Push aktiviert\"};\nreturn msg;",
         "outputs": 1,
@@ -5239,26 +5251,26 @@
         "y": 540,
         "wires": [
             [
-                "f44b8fc4.110af"
+                "de511c75.958c3"
             ]
         ]
     },
     {
-        "id": "f44b8fc4.110af",
+        "id": "de511c75.958c3",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1105,
         "y": 540,
         "wires": []
     },
     {
-        "id": "3309ef8.3916d1",
+        "id": "7dadaeb7.e3123",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️️⚫️⚫️⚫️⚫️⚫️⚫️ Errormessage aktiviert\"};\nreturn msg;",
         "outputs": 1,
@@ -5267,26 +5279,26 @@
         "y": 760,
         "wires": [
             [
-                "e8cd123f.84245"
+                "17faef68.f41da1"
             ]
         ]
     },
     {
-        "id": "e8cd123f.84245",
+        "id": "17faef68.f41da1",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1125,
         "y": 760,
         "wires": []
     },
     {
-        "id": "58f18366.c0034c",
+        "id": "1d3a86ef.bea9a9",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️⚪️️⚫️⚫️⚫️⚫️⚫️ Text Modus aktiviert\"};\nreturn msg;\n\n\n",
         "outputs": 1,
@@ -5295,26 +5307,26 @@
         "y": 980,
         "wires": [
             [
-                "66872fae.1146c"
+                "b64fa04.3dc8c6"
             ]
         ]
     },
     {
-        "id": "66872fae.1146c",
+        "id": "b64fa04.3dc8c6",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1145,
         "y": 980,
         "wires": []
     },
     {
-        "id": "49e4f0ef.daa11",
+        "id": "26dafc61.e23c44",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️⚪️⚪️️⚫️⚫️⚫️⚫️ warte auf Provider...\"};\nreturn msg;",
         "outputs": 1,
@@ -5323,26 +5335,26 @@
         "y": 1180,
         "wires": [
             [
-                "95c20b75.adc518"
+                "8fc5bf45.679a2"
             ]
         ]
     },
     {
-        "id": "95c20b75.adc518",
+        "id": "8fc5bf45.679a2",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1045,
         "y": 1180,
         "wires": []
     },
     {
-        "id": "7fe9bf48.1e6c1",
+        "id": "81b62651.d0ad88",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️⚪️⚪️⚪️️⚫️⚫️⚫️ bei Provider angemeldet\"};\nreturn msg;",
         "outputs": 1,
@@ -5351,26 +5363,26 @@
         "y": 1380,
         "wires": [
             [
-                "2572d19f.8cae6e"
+                "f9fc87ef.243738"
             ]
         ]
     },
     {
-        "id": "2572d19f.8cae6e",
+        "id": "f9fc87ef.243738",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1045,
         "y": 1380,
         "wires": []
     },
     {
-        "id": "11620498.e12c0b",
+        "id": "66564c3c.d34ce4",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️⚪️⚪️⚪️⚪️️⚫️⚫️ Signalstärke:\" + msg.payload};\nreturn msg;",
         "outputs": 1,
@@ -5379,26 +5391,26 @@
         "y": 1640,
         "wires": [
             [
-                "860ed964.b61de8"
+                "90be421e.98cdc"
             ]
         ]
     },
     {
-        "id": "860ed964.b61de8",
+        "id": "90be421e.98cdc",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1275,
         "y": 1640,
         "wires": []
     },
     {
-        "id": "6588523.61cdfac",
+        "id": "3fd78540.fb8d8a",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "limit",
         "pauseType": "rate",
         "timeout": "1",
@@ -5417,9 +5429,9 @@
         ]
     },
     {
-        "id": "ee03d2dc.bd999",
+        "id": "468de009.a6066",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status Start",
         "func": "msg.payload = {fill:\"red\",shape:\"dot\",text:\"keine Verbindung\"};\nreturn msg;",
         "outputs": 1,
@@ -5428,26 +5440,26 @@
         "y": 140,
         "wires": [
             [
-                "d0ab7e72.100fb"
+                "5cb6a04c.7d3cd"
             ]
         ]
     },
     {
-        "id": "d0ab7e72.100fb",
+        "id": "5cb6a04c.7d3cd",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 975,
         "y": 140,
         "wires": []
     },
     {
-        "id": "c83bc65.499b938",
+        "id": "405bf8b5.810ff8",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:msg.payload};\nreturn msg;",
         "outputs": 1,
@@ -5456,26 +5468,26 @@
         "y": 2560,
         "wires": [
             [
-                "5b2a890e.a91f88"
+                "cea9c3a4.ba80b"
             ]
         ]
     },
     {
-        "id": "5b2a890e.a91f88",
+        "id": "cea9c3a4.ba80b",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1195,
         "y": 2560,
         "wires": []
     },
     {
-        "id": "c363cf29.d23f3",
+        "id": "a27ef259.769d1",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"green\",shape:\"ring\",text:msg.payload};\nreturn msg;",
         "outputs": 1,
@@ -5484,27 +5496,27 @@
         "y": 2640,
         "wires": [
             [
-                "4c150ba9.6bee24",
-                "2a6fd8a0.715278"
+                "d8fead68.7a56f",
+                "c88cbbba.017c38"
             ]
         ]
     },
     {
-        "id": "4c150ba9.6bee24",
+        "id": "d8fead68.7a56f",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1395,
         "y": 2640,
         "wires": []
     },
     {
-        "id": "811c781d.54d9e8",
+        "id": "db202ef.570f4d",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"green\",shape:\"ring\",text:msg.payload};\nreturn msg;",
         "outputs": 1,
@@ -5513,26 +5525,26 @@
         "y": 2700,
         "wires": [
             [
-                "87fc6496.62e698"
+                "32f947d0.380c88"
             ]
         ]
     },
     {
-        "id": "87fc6496.62e698",
+        "id": "32f947d0.380c88",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1195,
         "y": 2700,
         "wires": []
     },
     {
-        "id": "e25e6fc9.9a81b",
+        "id": "2690f234.90c07e",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"green\",shape:\"dot\",text:\"Verbunden\"};\nreturn msg;",
         "outputs": 1,
@@ -5541,14 +5553,14 @@
         "y": 2640,
         "wires": [
             [
-                "4c150ba9.6bee24"
+                "d8fead68.7a56f"
             ]
         ]
     },
     {
-        "id": "2a6fd8a0.715278",
+        "id": "c88cbbba.017c38",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "1sec",
         "pauseType": "delay",
         "timeout": "1",
@@ -5564,14 +5576,14 @@
         "y": 2640,
         "wires": [
             [
-                "e25e6fc9.9a81b"
+                "2690f234.90c07e"
             ]
         ]
     },
     {
-        "id": "ecb6e849.21bf28",
+        "id": "a766a893.4dc598",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"blue\",shape:\"dot\",text:\"SMS empfangen!\"};\nreturn msg;",
         "outputs": 1,
@@ -5580,27 +5592,27 @@
         "y": 2060,
         "wires": [
             [
-                "b37674eb.aad858",
-                "4f777a22.201b14"
+                "4dcd5e45.0128",
+                "8c4420ce.53029"
             ]
         ]
     },
     {
-        "id": "b37674eb.aad858",
+        "id": "4dcd5e45.0128",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 755,
         "y": 2060,
         "wires": []
     },
     {
-        "id": "4f777a22.201b14",
+        "id": "8c4420ce.53029",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "3sec",
         "pauseType": "delay",
         "timeout": "3",
@@ -5616,14 +5628,14 @@
         "y": 2060,
         "wires": [
             [
-                "aca47ee.8ba418"
+                "cc94981a.6e7848"
             ]
         ]
     },
     {
-        "id": "aca47ee.8ba418",
+        "id": "cc94981a.6e7848",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"green\",shape:\"dot\",text:\"Verbunden\"};\nreturn msg;",
         "outputs": 1,
@@ -5632,48 +5644,48 @@
         "y": 2060,
         "wires": [
             [
-                "b37674eb.aad858"
+                "4dcd5e45.0128"
             ]
         ]
     },
     {
-        "id": "96266da7.a0bef",
+        "id": "82618d85.dfc88",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STOP",
         "links": [
-            "a8e92a68.61b3b8"
+            "e1e6215e.44411"
         ],
         "x": 1955,
         "y": 360,
         "wires": [
             [
-                "3a4d8ca.2f49c74"
+                "67f3adc4.d96044"
             ]
         ]
     },
     {
-        "id": "a8e92a68.61b3b8",
+        "id": "e1e6215e.44411",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STOP",
         "links": [
-            "96266da7.a0bef",
-            "9ce3728f.65814",
-            "336f515c.b297fe",
-            "d7e4ea09.3a4f18",
-            "3932a9da.34f5e6",
-            "d9e95a61.c84778",
-            "6f316bec.59ba14"
+            "82618d85.dfc88",
+            "60f43634.e7ba28",
+            "47a78f6e.36d11",
+            "5fb52c66.540164",
+            "d1ed98fc.da8698",
+            "4e34626e.0c3cfc",
+            "6fc0d814.cab958"
         ],
         "x": 675,
         "y": 3380,
         "wires": []
     },
     {
-        "id": "ef2561a3.e54ce",
+        "id": "b13657a5.b25ea8",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STOP",
         "info": "",
         "x": 750,
@@ -5681,41 +5693,41 @@
         "wires": []
     },
     {
-        "id": "3aa0b6fb.9f1d1a",
+        "id": "1e8da29d.9d6a9d",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "RESET",
         "links": [
-            "eadcd4ef.63e208"
+            "aa5034b.e83e8c8"
         ],
         "x": 895,
         "y": 3420,
         "wires": [
             [
-                "8ca6de72.8598d"
+                "19fb2f88.d617c"
             ]
         ]
     },
     {
-        "id": "3932a9da.34f5e6",
+        "id": "d1ed98fc.da8698",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STOP",
         "links": [
-            "a8e92a68.61b3b8"
+            "e1e6215e.44411"
         ],
         "x": 895,
         "y": 3380,
         "wires": [
             [
-                "2280f843.034c48"
+                "2485d1d8.a6928e"
             ]
         ]
     },
     {
-        "id": "2280f843.034c48",
+        "id": "2485d1d8.a6928e",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"grey\",shape:\"ring\",text:\"Stop\"};\nreturn msg;",
         "outputs": 1,
@@ -5724,26 +5736,26 @@
         "y": 3380,
         "wires": [
             [
-                "972f6319.a34f4"
+                "fe869a17.decc68"
             ]
         ]
     },
     {
-        "id": "972f6319.a34f4",
+        "id": "fe869a17.decc68",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1135,
         "y": 3380,
         "wires": []
     },
     {
-        "id": "8ca6de72.8598d",
+        "id": "19fb2f88.d617c",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"grey\",shape:\"ring\",text:\"Reset\"};\nreturn msg;",
         "outputs": 1,
@@ -5752,43 +5764,43 @@
         "y": 3420,
         "wires": [
             [
-                "659ee8fc.c911f8"
+                "6162490c.ddbbf8"
             ]
         ]
     },
     {
-        "id": "659ee8fc.c911f8",
+        "id": "6162490c.ddbbf8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1135,
         "y": 3420,
         "wires": []
     },
     {
-        "id": "d9e95a61.c84778",
+        "id": "4e34626e.0c3cfc",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AUS",
         "links": [
-            "a8e92a68.61b3b8",
-            "eadcd4ef.63e208"
+            "e1e6215e.44411",
+            "aa5034b.e83e8c8"
         ],
         "x": 1315,
         "y": 1680,
         "wires": [
             [
-                "5f69e3c6.dcb4bc"
+                "90cc717f.a3ced"
             ]
         ]
     },
     {
-        "id": "5f69e3c6.dcb4bc",
+        "id": "90cc717f.a3ced",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "false",
         "rules": [
             {
@@ -5811,21 +5823,21 @@
         ]
     },
     {
-        "id": "bc5c7bad.bca038",
+        "id": "58e0669c.b268a8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 975,
         "y": 3020,
         "wires": []
     },
     {
-        "id": "629e3e64.40aea",
+        "id": "449e150c.fafb6c",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5848,9 +5860,9 @@
         ]
     },
     {
-        "id": "99d2588e.871218",
+        "id": "a935c9f9.1a1268",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5873,9 +5885,9 @@
         ]
     },
     {
-        "id": "5dec1f4d.e21c2",
+        "id": "be31c9d4.0e19a8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5898,9 +5910,9 @@
         ]
     },
     {
-        "id": "b8b6e2f9.58d78",
+        "id": "49e692be.7b4bdc",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5923,9 +5935,9 @@
         ]
     },
     {
-        "id": "3f73ddb5.133122",
+        "id": "57e9f497.5796bc",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "setze flow.GSM_CPIN",
         "rules": [
             {
@@ -5948,9 +5960,9 @@
         ]
     },
     {
-        "id": "d019faaf.e8f218",
+        "id": "6246a68e.211848",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5973,9 +5985,9 @@
         ]
     },
     {
-        "id": "16389df3.8f6232",
+        "id": "26cf8627.9ace5a",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -5998,67 +6010,67 @@
         ]
     },
     {
-        "id": "8cedce96.0ca7e",
+        "id": "271ac552.8392ea",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
         "x": 1810,
         "y": 400,
         "wires": [
             [
-                "629e3e64.40aea",
-                "99d2588e.871218",
-                "5dec1f4d.e21c2",
-                "b8b6e2f9.58d78",
-                "3f73ddb5.133122",
-                "16389df3.8f6232",
-                "d019faaf.e8f218",
-                "ea132413.b5ce08",
-                "edc91d7c.36888",
-                "b9c8387a.1aa218",
-                "23befef0.5c24a2",
-                "fc0e6a64.f7cf18"
+                "449e150c.fafb6c",
+                "a935c9f9.1a1268",
+                "be31c9d4.0e19a8",
+                "49e692be.7b4bdc",
+                "57e9f497.5796bc",
+                "26cf8627.9ace5a",
+                "6246a68e.211848",
+                "efdc6b97.39fdc8",
+                "61e18f7e.112ec",
+                "30840362.015d9c",
+                "cabfe318.b85bc",
+                "47fe4518.3ae17c"
             ]
         ]
     },
     {
-        "id": "6f316bec.59ba14",
+        "id": "6fc0d814.cab958",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STOP",
         "links": [
-            "a8e92a68.61b3b8"
+            "e1e6215e.44411"
         ],
         "x": 1875,
         "y": 840,
         "wires": [
             [
-                "629e3e64.40aea",
-                "99d2588e.871218",
-                "5dec1f4d.e21c2",
-                "b8b6e2f9.58d78",
-                "3f73ddb5.133122",
-                "16389df3.8f6232",
-                "d019faaf.e8f218",
-                "ea132413.b5ce08",
-                "edc91d7c.36888",
-                "b9c8387a.1aa218",
-                "23befef0.5c24a2",
-                "fc0e6a64.f7cf18"
+                "449e150c.fafb6c",
+                "a935c9f9.1a1268",
+                "be31c9d4.0e19a8",
+                "49e692be.7b4bdc",
+                "57e9f497.5796bc",
+                "26cf8627.9ace5a",
+                "6246a68e.211848",
+                "efdc6b97.39fdc8",
+                "61e18f7e.112ec",
+                "30840362.015d9c",
+                "cabfe318.b85bc",
+                "47fe4518.3ae17c"
             ]
         ]
     },
     {
-        "id": "ea132413.b5ce08",
+        "id": "efdc6b97.39fdc8",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -6081,9 +6093,9 @@
         ]
     },
     {
-        "id": "b9c8387a.1aa218",
+        "id": "30840362.015d9c",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -6106,9 +6118,9 @@
         ]
     },
     {
-        "id": "edc91d7c.36888",
+        "id": "61e18f7e.112ec",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -6131,9 +6143,9 @@
         ]
     },
     {
-        "id": "23befef0.5c24a2",
+        "id": "cabfe318.b85bc",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -6156,9 +6168,9 @@
         ]
     },
     {
-        "id": "fc0e6a64.f7cf18",
+        "id": "47fe4518.3ae17c",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "rules": [
             {
@@ -6181,9 +6193,9 @@
         ]
     },
     {
-        "id": "db3b7209.3bd75",
+        "id": "968ae9cb.7e2568",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "pauseType": "rate",
         "timeout": "1",
@@ -6199,14 +6211,14 @@
         "y": 3300,
         "wires": [
             [
-                "876acf85.3740a"
+                "72a939df.a67a28"
             ]
         ]
     },
     {
-        "id": "23db24b.0f355dc",
+        "id": "22f9d007.f6c67",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "DEBUG",
         "property": "DEBUG",
         "propertyType": "env",
@@ -6222,14 +6234,14 @@
         "y": 2180,
         "wires": [
             [
-                "81cf25f1.288208"
+                "4c584901.473bc8"
             ]
         ]
     },
     {
-        "id": "f1085a50.2ce4c8",
+        "id": "5e668423.97089c",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️⚪️⚪️⚪️⚪️⚪️️⚫️ prüfe ungelesene SMS\"};\nreturn msg;",
         "outputs": 1,
@@ -6238,16 +6250,16 @@
         "y": 1920,
         "wires": [
             [
-                "dfbd136e.3558d",
-                "9503bacc.d75328",
-                "8c6f12c3.00bf1"
+                "64957964.7f33e8",
+                "d6f1843.8800078",
+                "599385d6.bd353c"
             ]
         ]
     },
     {
-        "id": "9503bacc.d75328",
+        "id": "d6f1843.8800078",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "1sec",
         "pauseType": "delay",
         "timeout": "1",
@@ -6263,14 +6275,14 @@
         "y": 1940,
         "wires": [
             [
-                "fdb41733.81d6f8"
+                "d80bef16.2ca9f"
             ]
         ]
     },
     {
-        "id": "fdb41733.81d6f8",
+        "id": "d80bef16.2ca9f",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"yellow\",shape:\"ring\",text:\"⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️\"};\nreturn msg;",
         "outputs": 1,
@@ -6279,26 +6291,26 @@
         "y": 1940,
         "wires": [
             [
-                "dfbd136e.3558d"
+                "64957964.7f33e8"
             ]
         ]
     },
     {
-        "id": "dfbd136e.3558d",
+        "id": "64957964.7f33e8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "STATUS",
         "links": [
-            "673e3b47.767d24"
+            "70532deb.646ee4"
         ],
         "x": 1275,
         "y": 1920,
         "wires": []
     },
     {
-        "id": "df0223fa.376b",
+        "id": "d3bf6164.5f2a3",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "OK",
         "property": "PIN",
         "propertyType": "env",
@@ -6317,17 +6329,17 @@
         "y": 1040,
         "wires": [
             [
-                "276e93b3.82ba5c"
+                "832cd570.85f778"
             ],
             [
-                "bd98ae8d.9feca"
+                "86cb0ee8.ca0a2"
             ]
         ]
     },
     {
-        "id": "fa9d77f4.49f098",
+        "id": "7ae33fc3.f5d21",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AT+CPIN=0000 \"\\r\"",
         "func": "var at_cmd = \"AT+CPIN=\" + msg.PIN;\nmsg.payload = at_cmd+\"\\r\";\nreturn msg;\n",
         "outputs": "1",
@@ -6336,26 +6348,26 @@
         "y": 1060,
         "wires": [
             [
-                "1ab6649.6695f9b"
+                "b5852a29.3b2bd8"
             ]
         ]
     },
     {
-        "id": "1ab6649.6695f9b",
+        "id": "b5852a29.3b2bd8",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to SERIAL OUT",
         "links": [
-            "b5f9e123.56d4e"
+            "1680f7f6.5032b8"
         ],
         "x": 1235,
         "y": 1060,
         "wires": []
     },
     {
-        "id": "bd98ae8d.9feca",
+        "id": "86cb0ee8.ca0a2",
         "type": "change",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "PIN",
         "rules": [
             {
@@ -6375,14 +6387,14 @@
         "y": 1060,
         "wires": [
             [
-                "fa9d77f4.49f098"
+                "7ae33fc3.f5d21"
             ]
         ]
     },
     {
-        "id": "50b15dd9.b4e4f4",
+        "id": "66062d1e.e90564",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "🔵;🔴;⚫️;⚪️;🟢;🔘;",
         "info": "⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️\n⚪️️️️️️️️⚫️⚫️⚫️⚫️⚫️⚫️⚫️\n⚪️⚪️️⚫️⚫️⚫️⚫️⚫️⚫️\n⚪️⚪️⚪️️⚫️⚫️⚫️⚫️⚫️\n⚪️⚪️⚪️⚪️️⚫️⚫️⚫️⚫️\n⚪️⚪️⚪️⚪️⚪️️⚫️⚫️⚫️\n⚪️⚪️⚪️⚪️⚪️⚪️️⚫️⚫️\n⚪️⚪️⚪️⚪️⚪️⚪️⚪️️⚫️\n⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️",
         "x": 140,
@@ -6390,9 +6402,9 @@
         "wires": []
     },
     {
-        "id": "8c6f12c3.00bf1",
+        "id": "599385d6.bd353c",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "2sec",
         "pauseType": "delay",
         "timeout": "2",
@@ -6408,14 +6420,14 @@
         "y": 1900,
         "wires": [
             [
-                "b51e8ad3.cc3878"
+                "eef31267.43dde"
             ]
         ]
     },
     {
-        "id": "b51e8ad3.cc3878",
+        "id": "eef31267.43dde",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "func": "msg.payload = {fill:\"green\",shape:\"dot\",text:\"Verbunden\"};\nreturn msg;",
         "outputs": 1,
@@ -6424,14 +6436,14 @@
         "y": 1900,
         "wires": [
             [
-                "dfbd136e.3558d"
+                "64957964.7f33e8"
             ]
         ]
     },
     {
-        "id": "e22c86f.9877078",
+        "id": "46a5b354.ffb23c",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AUTOSTART",
         "property": "AUTOSTART",
         "propertyType": "env",
@@ -6447,46 +6459,46 @@
         "y": 20,
         "wires": [
             [
-                "58c422b1.7e439c"
+                "ad979a1.466fc68"
             ]
         ]
     },
     {
-        "id": "e8d696c.545f268",
+        "id": "ec990c43.abaab",
         "type": "inject",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
-        "topic": "",
-        "payload": "Autostart",
-        "payloadType": "str",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "3",
+        "topic": "",
+        "payload": "Autostart",
+        "payloadType": "str",
         "x": 120,
         "y": 20,
         "wires": [
             [
-                "e22c86f.9877078"
+                "46a5b354.ffb23c"
             ]
         ]
     },
     {
-        "id": "58c422b1.7e439c",
+        "id": "ad979a1.466fc68",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "AUTOSTART",
         "links": [
-            "1e6f7169.db996f"
+            "603c3310.8562ec"
         ],
         "x": 755,
         "y": 20,
         "wires": []
     },
     {
-        "id": "fa1deb58.aef978",
+        "id": "a035a2fb.d0518",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SIM PIN setzen",
         "info": "",
         "x": 1340,
@@ -6494,9 +6506,9 @@
         "wires": []
     },
     {
-        "id": "2491c30d.6c259c",
+        "id": "c4399eb4.f34d7",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SIM prüfen",
         "info": "",
         "x": 1320,
@@ -6504,37 +6516,37 @@
         "wires": []
     },
     {
-        "id": "78de9b2.fbcf664",
+        "id": "621c0d60.502b14",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "send SMS",
         "links": [
-            "82e7ff44.74a0e"
+            "7455f473.c5402c"
         ],
         "x": 675,
         "y": 2980,
         "wires": []
     },
     {
-        "id": "82e7ff44.74a0e",
+        "id": "7455f473.c5402c",
         "type": "link in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS Timeout",
         "links": [
-            "78de9b2.fbcf664"
+            "621c0d60.502b14"
         ],
         "x": 735,
         "y": 2640,
         "wires": [
             [
-                "4cc3aab4.d97b54"
+                "69af9b0f.589f24"
             ]
         ]
     },
     {
-        "id": "a256584e.d5c1f8",
+        "id": "4d0fbe9c.9a709",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "to Serial",
         "info": "",
         "x": 100,
@@ -6542,9 +6554,9 @@
         "wires": []
     },
     {
-        "id": "8ec32b5d.567518",
+        "id": "2ba03111.5583ae",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Status",
         "info": "",
         "x": 90,
@@ -6552,9 +6564,9 @@
         "wires": []
     },
     {
-        "id": "52e38efd.9af37",
+        "id": "7b1bb08b.e4c2f",
         "type": "http in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "url": "/TC35",
         "method": "get",
@@ -6564,14 +6576,14 @@
         "y": 3760,
         "wires": [
             [
-                "de770649.232b08"
+                "e3a924f9.288c18"
             ]
         ]
     },
     {
-        "id": "a81424e8.c1ca68",
+        "id": "e434c17a.f3bf7",
         "type": "http in",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "url": "/TC35",
         "method": "post",
@@ -6581,30 +6593,32 @@
         "y": 3840,
         "wires": [
             [
-                "761d7e59.5ac21"
+                "7de5d022.fad51"
             ]
         ]
     },
     {
-        "id": "de770649.232b08",
+        "id": "e3a924f9.288c18",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "msg.url = \"addons/red/TC35\";",
         "func": "msg.url = \"addons/red/TC35\";\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 510,
         "y": 3760,
         "wires": [
             [
-                "e09eef1.c7e4b1"
+                "d2885c5b.0a34f"
             ]
         ]
     },
     {
-        "id": "e09eef1.c7e4b1",
+        "id": "d2885c5b.0a34f",
         "type": "template",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "JavaScript",
         "field": "payload.script",
         "fieldType": "msg",
@@ -6615,14 +6629,14 @@
         "y": 3760,
         "wires": [
             [
-                "ea355e6f.9e769"
+                "5f4496dd.150a98"
             ]
         ]
     },
     {
-        "id": "f2d5ba45.639fc8",
+        "id": "822d7071.d9395",
         "type": "http response",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -6631,9 +6645,9 @@
         "wires": []
     },
     {
-        "id": "49e29f1.7f67f6",
+        "id": "ac9c11f8.c58f3",
         "type": "template",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "HTML",
         "field": "payload",
         "fieldType": "msg",
@@ -6644,14 +6658,14 @@
         "y": 3760,
         "wires": [
             [
-                "f2d5ba45.639fc8"
+                "822d7071.d9395"
             ]
         ]
     },
     {
-        "id": "ea06b038.b0aaa",
+        "id": "5bbd0f1e.9474d",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Website",
         "info": "",
         "x": 180,
@@ -6659,9 +6673,9 @@
         "wires": []
     },
     {
-        "id": "b0738cbe.26507",
+        "id": "3764b42a.ca28bc",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Form Submission",
         "info": "",
         "x": 200,
@@ -6669,9 +6683,9 @@
         "wires": []
     },
     {
-        "id": "761d7e59.5ac21",
+        "id": "7de5d022.fad51",
         "type": "switch",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "nicht leer",
         "property": "payload.message",
         "propertyType": "msg",
@@ -6683,19 +6697,19 @@
         "checkall": "false",
         "repair": false,
         "outputs": 1,
-        "x": 440,
-        "y": 3800,
+        "x": 680,
+        "y": 3840,
         "wires": [
             [
-                "4d96558.d3bfcac",
-                "68539aa.0354d64"
+                "80980cc9.526bb",
+                "ed1b57e5.478258"
             ]
         ]
     },
     {
-        "id": "d928003e.b3fbe",
+        "id": "f3db3572.c10d08",
         "type": "comment",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SMS WEBIF",
         "info": "",
         "x": 110,
@@ -6703,9 +6717,9 @@
         "wires": []
     },
     {
-        "id": "4d96558.d3bfcac",
+        "id": "80980cc9.526bb",
         "type": "delay",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Limiter",
         "pauseType": "rate",
         "timeout": "5",
@@ -6717,19 +6731,19 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": true,
-        "x": 610,
+        "x": 850,
         "y": 3840,
         "wires": [
             [
-                "1c1823e6.ccc6fc",
-                "ce199e70.9b183"
+                "97eebf21.4ec3e",
+                "274d8bff.dac454"
             ]
         ]
     },
     {
-        "id": "ea355e6f.9e769",
+        "id": "5f4496dd.150a98",
         "type": "template",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "CSS",
         "field": "payload.style",
         "fieldType": "msg",
@@ -6740,14 +6754,14 @@
         "y": 3760,
         "wires": [
             [
-                "49e29f1.7f67f6"
+                "ac9c11f8.c58f3"
             ]
         ]
     },
     {
-        "id": "1c1823e6.ccc6fc",
+        "id": "97eebf21.4ec3e",
         "type": "debug",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "d": true,
         "name": "mysitepost",
         "active": true,
@@ -6756,42 +6770,46 @@
         "tostatus": false,
         "complete": "payload",
         "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
         "x": 1110,
         "y": 3840,
         "wires": []
     },
     {
-        "id": "ce199e70.9b183",
+        "id": "274d8bff.dac454",
         "type": "link out",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "SEND_SMS",
         "links": [
-            "c0085404.f04648"
+            "b95a692d.899558"
         ],
-        "x": 735,
+        "x": 975,
         "y": 3840,
         "wires": []
     },
     {
-        "id": "68539aa.0354d64",
+        "id": "ed1b57e5.478258",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "return msg.payload to client",
         "func": "msg.payload = 'OK';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 920,
         "y": 3800,
         "wires": [
             [
-                "f2d5ba45.639fc8"
+                "822d7071.d9395"
             ]
         ]
     },
     {
-        "id": "bf65b4f0.338938",
+        "id": "316360fa.3757a",
         "type": "function",
-        "z": "ebecf65.ff5b608",
+        "z": "5c14d8ce.7af138",
         "name": "Filtern",
         "func": "//msg.payload = msg.payload.split(\"\\n\");\n\nvar antwort = msg.payload;\n\nif (antwort.length > 2 && antwort.length !== \"\"){\n    msg.payload = antwort.slice(1, antwort.length);\n    return msg;\n}",
         "outputs": 1,
@@ -6803,57 +6821,242 @@
         ]
     },
     {
-        "id": "8afe8f08.31baf",
-        "type": "tab",
-        "label": "TC35",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "29b35b21.7d6214",
-        "type": "subflow:ebecf65.ff5b608",
-        "z": "8afe8f08.31baf",
-        "name": "TC35 GSM Modul",
-        "env": [
-            {
-                "name": "AUTOSTART",
-                "type": "bool",
-                "value": "true"
-            }
-        ],
-        "x": 970,
-        "y": 580,
+        "id": "ec288a04.df6968",
+        "type": "http in",
+        "z": "5c14d8ce.7af138",
+        "name": "",
+        "url": "/TC35sendSMS",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 210,
+        "y": 4000,
         "wires": [
             [
-                "ad76b8db.6a0f28"
-            ],
-            [
-                "a042c153.e760d"
-            ],
-            [
-                "b7c36d51.d86f5"
-            ],
-            [
-                "f98d4ddc.20471"
-            ],
-            [
-                "74a5e6c1.553708"
-            ],
-            [
-                "a36258f0.99cfe8"
-            ],
-            [
-                "72eb574a.e61a08"
-            ],
-            [
-                "92d3ce87.227ff"
+                "e995e839.8de5c8",
+                "188d425e.7fd0be"
             ]
         ]
     },
     {
-        "id": "5ed99990.bfa0d8",
+        "id": "78b157f8.a3d358",
+        "type": "http response",
+        "z": "5c14d8ce.7af138",
+        "name": "",
+        "x": 1150,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "a9f0dc7b.28a6c",
+        "type": "switch",
+        "z": "5c14d8ce.7af138",
+        "name": "!= leer",
+        "property": "payload.number",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 690,
+        "y": 3960,
+        "wires": [
+            [
+                "9068d13d.64003",
+                "80980cc9.526bb"
+            ],
+            [
+                "a83b45fc.0536c8"
+            ]
+        ]
+    },
+    {
+        "id": "5cdef31b.e1412c",
+        "type": "delay",
+        "z": "5c14d8ce.7af138",
+        "name": "limit",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 1030,
+        "y": 4040,
+        "wires": [
+            [
+                "78b157f8.a3d358"
+            ]
+        ]
+    },
+    {
+        "id": "e995e839.8de5c8",
+        "type": "delay",
+        "z": "5c14d8ce.7af138",
+        "name": "200ms",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 470,
+        "y": 4040,
+        "wires": [
+            [
+                "bc783e12.aa871"
+            ]
+        ]
+    },
+    {
+        "id": "bc783e12.aa871",
+        "type": "template",
+        "z": "5c14d8ce.7af138",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n       <h1>SIM800 API</h1> \n    </head>\n    <body>\n        <h1>error unknown API request!</h1>\n    </body>\n</html>",
+        "x": 690,
+        "y": 4040,
+        "wires": [
+            [
+                "5cdef31b.e1412c"
+            ]
+        ]
+    },
+    {
+        "id": "a83b45fc.0536c8",
+        "type": "template",
+        "z": "5c14d8ce.7af138",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n        <h1>SIM800 Web API</h1>\n    </head>\n    <body>\n        <h1>error wrong Value!</h1>\n    </body>\n</html>",
+        "x": 850,
+        "y": 3980,
+        "wires": [
+            [
+                "5cdef31b.e1412c"
+            ]
+        ]
+    },
+    {
+        "id": "9068d13d.64003",
+        "type": "template",
+        "z": "5c14d8ce.7af138",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n       <h1>SIM800 Web API</h1> \n    </head>\n    <body>\n        <h1>OK</h1>\n        <h1>Message send</h1>\n    </body>\n</html>",
+        "x": 850,
+        "y": 3940,
+        "wires": [
+            [
+                "5cdef31b.e1412c"
+            ]
+        ]
+    },
+    {
+        "id": "188d425e.7fd0be",
+        "type": "switch",
+        "z": "5c14d8ce.7af138",
+        "name": "has key number",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "number",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 500,
+        "y": 4000,
+        "wires": [
+            [
+                "a9f0dc7b.28a6c"
+            ],
+            [
+                "bc783e12.aa871"
+            ]
+        ]
+    },
+    {
+        "id": "524321b5.fbaa2",
+        "type": "comment",
+        "z": "5c14d8ce.7af138",
+        "name": "Web API Input",
+        "info": "",
+        "x": 110,
+        "y": 3960,
+        "wires": []
+    },
+    {
+        "id": "2a1195ea.a9c1aa",
+        "type": "subflow:5c14d8ce.7af138",
+        "z": "4522fbaa.9cd964",
+        "name": "TC35 GSM Modul",
+        "env": [],
+        "x": 970,
+        "y": 560,
+        "wires": [
+            [
+                "9c0bed0e.1e0ee"
+            ],
+            [
+                "41a97de7.ef74a4"
+            ],
+            [
+                "581179b7.db5d48"
+            ],
+            [
+                "3d37f849.e2a9a8"
+            ],
+            [
+                "298740ab.0a6f4"
+            ],
+            [
+                "acb57d70.5eea"
+            ],
+            [
+                "a1fefe49.f7034"
+            ],
+            [
+                "c66cb996.880b88"
+            ]
+        ]
+    },
+    {
+        "id": "1192a8e8.adad07",
         "type": "change",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "msg.input",
         "rules": [
             {
@@ -6870,10 +7073,10 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 140,
+        "y": 120,
         "wires": [
             [
-                "29b35b21.7d6214"
+                "2a1195ea.a9c1aa"
             ]
         ],
         "inputLabels": [
@@ -6885,70 +7088,91 @@
         "icon": "node-red/inject.svg"
     },
     {
-        "id": "eaeeb93b.1d9198",
+        "id": "f9350f41.fcfc3",
         "type": "inject",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "START",
-        "topic": "",
-        "payload": "START",
-        "payloadType": "str",
+        "props": [
+            {
+                "p": "payload",
+                "v": "START",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
+        "topic": "",
+        "payload": "START",
+        "payloadType": "str",
         "x": 370,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
-                "8d362eaa.4dbdd"
+                "ce3705a7.d7b7d8"
             ]
         ],
         "icon": "node-red-dashboard/ui_switch.png"
     },
     {
-        "id": "ab0af23e.d0067",
+        "id": "3ab0d3f8.3a1c5c",
         "type": "inject",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Sende Test SMS",
-        "topic": "",
-        "payload": "{\"number\":\"0049123456789\",\"message\":\"Nodered SMS Text Deine CCU3\"}",
-        "payloadType": "json",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"number\":\"01741234567\",\"message\":\"Nodered SMS Text Deine CCU3\"}",
+        "payloadType": "json",
         "x": 400,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
-                "a14902bd.bbea4"
+                "1b8786cb.05c3c9"
             ]
         ]
     },
     {
-        "id": "72d1ca66.f871a4",
+        "id": "b3f4c40d.8fc708",
         "type": "inject",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "STOP",
-        "topic": "",
-        "payloadType": "str",
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "str",
         "x": 370,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
-                "be427924.bc43c8"
+                "ab0d56df.456fd8"
             ]
         ],
         "icon": "node-red-dashboard/ui_switch.png"
     },
     {
-        "id": "8d362eaa.4dbdd",
+        "id": "ce3705a7.d7b7d8",
         "type": "change",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "msg.input",
         "rules": [
             {
@@ -6965,17 +7189,17 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
-                "29b35b21.7d6214"
+                "2a1195ea.a9c1aa"
             ]
         ]
     },
     {
-        "id": "a14902bd.bbea4",
+        "id": "1b8786cb.05c3c9",
         "type": "change",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "msg.input",
         "rules": [
             {
@@ -6992,17 +7216,17 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
-                "29b35b21.7d6214"
+                "2a1195ea.a9c1aa"
             ]
         ]
     },
     {
-        "id": "be427924.bc43c8",
+        "id": "ab0d56df.456fd8",
         "type": "change",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "msg.input",
         "rules": [
             {
@@ -7019,135 +7243,135 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
-                "29b35b21.7d6214"
+                "2a1195ea.a9c1aa"
             ]
         ]
     },
     {
-        "id": "b7c36d51.d86f5",
+        "id": "581179b7.db5d48",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_LetzteSignalstaerke",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1310,
-        "y": 240,
+        "y": 220,
         "wires": [
             []
         ]
     },
     {
-        "id": "a042c153.e760d",
+        "id": "41a97de7.ef74a4",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_LetzterPruefStatus",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1310,
-        "y": 180,
+        "y": 160,
         "wires": [
             []
         ]
     },
     {
-        "id": "f98d4ddc.20471",
+        "id": "3d37f849.e2a9a8",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_Modus",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1270,
-        "y": 300,
+        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "74a5e6c1.553708",
+        "id": "298740ab.0a6f4",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_LetzterSendeStatus",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1310,
-        "y": 360,
+        "y": 340,
         "wires": [
             []
         ]
     },
     {
-        "id": "a36258f0.99cfe8",
+        "id": "acb57d70.5eea",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_SMSEmfangAbsenderID",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1330,
-        "y": 420,
+        "y": 400,
         "wires": [
             []
         ]
     },
     {
-        "id": "72eb574a.e61a08",
+        "id": "a1fefe49.f7034",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_SMSEmfangText",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1300,
-        "y": 480,
+        "y": 460,
         "wires": [
             []
         ]
     },
     {
-        "id": "92d3ce87.227ff",
+        "id": "c66cb996.880b88",
         "type": "ccu-sysvar",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Messenger_Warteschlange",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
         "x": 1300,
-        "y": 540,
+        "y": 520,
         "wires": [
             []
         ]
     },
     {
-        "id": "dd6d867a.cd7188",
+        "id": "826c57cc.79db78",
         "type": "ccu-poll",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "",
         "script": "",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "x": 530,
-        "y": 460,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "196edcae.87f893",
+        "id": "488fc619.d584f8",
         "type": "ccu-get-value",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "number",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "iface": "ReGaHSS",
         "channel": "",
         "sysvar": "Messenger_SMSNummer",
@@ -7157,19 +7381,19 @@
         "setProp": "number",
         "setPropType": "msg",
         "x": 360,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
-                "64998b41.d0cd94"
+                "284764eb.6f32bc"
             ]
         ]
     },
     {
-        "id": "64998b41.d0cd94",
+        "id": "284764eb.6f32bc",
         "type": "ccu-get-value",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "message",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "iface": "ReGaHSS",
         "channel": "",
         "sysvar": "Messenger_Warteschlange",
@@ -7179,38 +7403,43 @@
         "setProp": "message",
         "setPropType": "msg",
         "x": 520,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
-                "c338d264.361b2"
+                "ee4e511c.71f3d"
             ]
         ]
     },
     {
-        "id": "9a2e5bd0.183728",
+        "id": "8aadbb3c.2fc118",
         "type": "inject",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Send",
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
         "x": 370,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
-                "dd6d867a.cd7188",
-                "68ea592d.530358"
+                "826c57cc.79db78",
+                "f8a328e9.77f7c8"
             ]
         ]
     },
     {
-        "id": "68ea592d.530358",
+        "id": "f8a328e9.77f7c8",
         "type": "delay",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "500ms",
         "pauseType": "delay",
         "timeout": "500",
@@ -7223,36 +7452,38 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 530,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
-                "196edcae.87f893"
+                "488fc619.d584f8"
             ]
         ]
     },
     {
-        "id": "c338d264.361b2",
+        "id": "ee4e511c.71f3d",
         "type": "function",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "msg.input",
         "func": "msg.input = \"SEND_SMS\";\nmsg.payload = {\"number\":msg.number,\"message\":msg.message}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 700,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
-                "29b35b21.7d6214"
+                "2a1195ea.a9c1aa"
             ]
         ]
     },
     {
-        "id": "892f3e46.72926",
+        "id": "e6943bee.949d38",
         "type": "ccu-rpc-event",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "",
         "iface": "BidCos-RF",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "rooms": "",
         "roomsRx": "str",
         "functions": "",
@@ -7278,42 +7509,42 @@
         "cache": false,
         "topic": "${CCU}/${Interface}/${channelName}/${datapoint}",
         "x": 360,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
-                "dd6d867a.cd7188",
-                "68ea592d.530358"
+                "826c57cc.79db78",
+                "f8a328e9.77f7c8"
             ]
         ]
     },
     {
-        "id": "49d22408.4207ec",
+        "id": "85ecb459.23f1d8",
         "type": "serial in",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Serial-In",
-        "serial": "527c23a3.96193c",
+        "serial": "44267baf.756834",
         "x": 540,
-        "y": 140,
+        "y": 120,
         "wires": [
             [
-                "5ed99990.bfa0d8"
+                "1192a8e8.adad07"
             ]
         ]
     },
     {
-        "id": "ad76b8db.6a0f28",
+        "id": "9c0bed0e.1e0ee",
         "type": "serial out",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Serail-Out",
-        "serial": "527c23a3.96193c",
+        "serial": "44267baf.756834",
         "x": 1240,
-        "y": 120,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "73debf2f.80c45",
+        "id": "6a91b4be.7d2b8c",
         "type": "template",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Systemvariablen",
         "field": "payload",
         "fieldType": "msg",
@@ -7322,169 +7553,200 @@
         "template": "! Zeichenkette\nstring  svName = \"Messenger_SMSEmfangAbsenderID\";\nobject  svObj  = dom.GetObject(svName);\nif (!svObj){   \nobject svObjects = dom.GetObject(ID_SYSTEM_VARIABLES);\nsvObj = dom.CreateObject(OT_VARDP);\nsvObjects.Add(svObj.ID());\nsvObj.Name(svName);   \nsvObj.ValueType(ivtString);\nsvObj.ValueSubType(istChar8859);\nsvObj.DPInfo(\"Absender Telefonnummer empfangene SMS\");\nsvObj.ValueUnit(\"\");\nsvObj.DPArchive(false);\nsvObj.State(\"\");\nsvObj.Internal(false);\nsvObj.Visible(true);\ndom.RTUpdate(0);\n}\n! Zeichenkette\nstring  svName = \"Messenger_SMSNummer\";\nobject  svObj  = dom.GetObject(svName);\nif (!svObj){   \nobject svObjects = dom.GetObject(ID_SYSTEM_VARIABLES);\nsvObj = dom.CreateObject(OT_VARDP);\nsvObjects.Add(svObj.ID());\nsvObj.Name(svName);   \nsvObj.ValueType(ivtString);\nsvObj.ValueSubType(istChar8859);\nsvObj.DPInfo(\"Empfänger Telefonnummer\");\nsvObj.ValueUnit(\"\");\nsvObj.DPArchive(false);\nsvObj.State(\"\");\nsvObj.Internal(false);\nsvObj.Visible(true);\ndom.RTUpdate(0);\n}",
         "output": "str",
         "x": 680,
-        "y": 760,
+        "y": 740,
         "wires": [
             [
-                "69bb836e.be1c1c"
+                "cf46a8bf.4d0da8"
             ]
         ]
     },
     {
-        "id": "69bb836e.be1c1c",
+        "id": "cf46a8bf.4d0da8",
         "type": "ccu-script",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Sysvar erstellen",
         "script": "",
-        "ccuConfig": "",
+        "ccuConfig": "38263145.35ea0e",
         "topic": "${CCU}/${Interface}",
         "x": 860,
-        "y": 760,
+        "y": 740,
         "wires": [
             []
         ]
     },
     {
-        "id": "b0136155.3c8d1",
+        "id": "547c99e4.0331d8",
         "type": "inject",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Systemvariablen anlegen",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
         "x": 470,
-        "y": 760,
+        "y": 740,
         "wires": [
             [
-                "73debf2f.80c45"
+                "6a91b4be.7d2b8c"
             ]
         ]
     },
     {
-        "id": "b5ca9a6.dcf2168",
+        "id": "a68d838d.218f6",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "1. Fehlende Systemvariablen anlegen",
         "info": "",
         "x": 510,
-        "y": 720,
+        "y": 700,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "a5e4e23d.b109f",
+        "id": "61aa1f26.c48c7",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "Neue Systemvariable ->",
         "info": "",
         "x": 200,
-        "y": 580,
+        "y": 560,
         "wires": [],
         "icon": "font-awesome/fa-exclamation-triangle"
     },
     {
-        "id": "45a3ebd6.f24a84",
+        "id": "ea6d091e.323398",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "<- Neue Systemvariable",
         "info": "",
         "x": 1560,
-        "y": 420,
+        "y": 400,
         "wires": [],
         "icon": "font-awesome/fa-exclamation-triangle"
     },
     {
-        "id": "ae04b29c.d991d",
+        "id": "1a6d2cd5.866623",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "TC35 Modul Subflow -> Alternative zum Messenger Addon",
         "info": "Folgende Systemvariable wird nicht mehr bedient:\n\n- Messenger_SMSBefehle",
         "x": 490,
-        "y": 60,
+        "y": 40,
         "wires": []
     },
     {
-        "id": "f0bb2a36.4751d8",
+        "id": "5746d01f.13f26",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "2. tty Pfad anpassen \"/ttyUSB0\" oder \"/ttyUSB1\"...",
         "info": "",
         "x": 300,
-        "y": 140,
+        "y": 120,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "d0f92d1c.bc3c7",
+        "id": "c8752fca.bb929",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "3. Taster auswählen",
         "info": "",
         "x": 210,
-        "y": 520,
-        "wires": [],
-        "icon": "font-awesome/fa-exclamation"
-    },
-    {
-        "id": "b6fb612d.bbf0c",
-        "type": "comment",
-        "z": "8afe8f08.31baf",
-        "name": "4. Config bearbeiten",
-        "info": "",
-        "x": 970,
         "y": 500,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "362138a1.106e38",
+        "id": "1eadea64.6dea76",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
+        "name": "4. Config bearbeiten",
+        "info": "",
+        "x": 970,
+        "y": 480,
+        "wires": [],
+        "icon": "font-awesome/fa-exclamation"
+    },
+    {
+        "id": "62839c0a.9b7cf4",
+        "type": "comment",
+        "z": "4522fbaa.9cd964",
         "name": "5. Empfänger bearbeiten",
         "info": "",
-        "x": 210,
-        "y": 380,
+        "x": 170,
+        "y": 360,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "9df8743a.a6e328",
+        "id": "7aa3f3f2.24c4cc",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "6. SysVar prüfen",
         "info": "",
-        "x": 1100,
-        "y": 420,
+        "x": 1500,
+        "y": 160,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "4bff29c1.0061f8",
+        "id": "7b8fb831.c584c8",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "7. Fertig zum Start deploy!",
         "info": "",
         "x": 1330,
-        "y": 720,
+        "y": 700,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "f111344e.3af408",
+        "id": "4b457473.30190c",
         "type": "comment",
-        "z": "8afe8f08.31baf",
+        "z": "4522fbaa.9cd964",
         "name": "8. Webinterface öffnen unter:   http://IPderCCU/addons/red/TC35",
         "info": "",
         "x": 1450,
-        "y": 760,
+        "y": 740,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "527c23a3.96193c",
+        "id": "38263145.35ea0e",
+        "type": "ccu-connection",
+        "name": "CCU3",
+        "host": "127.0.0.1",
+        "regaEnabled": true,
+        "bcrfEnabled": true,
+        "iprfEnabled": true,
+        "virtEnabled": true,
+        "bcwiEnabled": false,
+        "cuxdEnabled": false,
+        "regaPoll": true,
+        "regaInterval": "120",
+        "rpcPingTimeout": "60",
+        "rpcInitAddress": "127.0.0.1",
+        "rpcServerHost": "127.0.0.1",
+        "rpcBinPort": "2047",
+        "rpcXmlPort": "2048",
+        "queueTimeout": "5000",
+        "queuePause": "250",
+        "contextStore": ""
+    },
+    {
+        "id": "44267baf.756834",
         "type": "serial-port",
         "serialport": "/dev/ttyUSB0",
         "serialbaud": "9600",
