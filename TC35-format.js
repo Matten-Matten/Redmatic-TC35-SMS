@@ -2301,8 +2301,7 @@
         "wires": [
             [
                 "968ae9cb.7e2568",
-                "502a0617.fec108",
-                "2c3234fc.d938ec"
+                "502a0617.fec108"
             ]
         ]
     },
@@ -7542,7 +7541,7 @@
         ]
     },
     {
-        "id": "a334a743.c50048",
+        "id": "8e9b822c.f9eef",
         "type": "change",
         "z": "4522fbaa.9cd964",
         "name": "msg.input",
@@ -7560,11 +7559,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1720,
-        "y": 900,
+        "x": 2280,
+        "y": 1180,
         "wires": [
             [
-                "62e2180a.0d97b8"
+                "fe3d5303.1209e"
             ]
         ],
         "inputLabels": [
@@ -7576,7 +7575,7 @@
         "icon": "node-red/inject.svg"
     },
     {
-        "id": "d1eacbe9.944e78",
+        "id": "adfff539.618bc8",
         "type": "inject",
         "z": "4522fbaa.9cd964",
         "name": "START",
@@ -7599,17 +7598,17 @@
         "topic": "",
         "payload": "START",
         "payloadType": "str",
-        "x": 1390,
-        "y": 980,
+        "x": 1950,
+        "y": 1260,
         "wires": [
             [
-                "44ef503f.c909d"
+                "41700682.8679b8"
             ]
         ],
         "icon": "node-red-dashboard/ui_switch.png"
     },
     {
-        "id": "73d6f602.9d70e8",
+        "id": "c0d5fbc7.a26498",
         "type": "inject",
         "z": "4522fbaa.9cd964",
         "name": "Sende Test SMS",
@@ -7629,16 +7628,16 @@
         "topic": "",
         "payload": "{\"number\":\"01741234567\",\"message\":\"Nodered SMS Text Deine CCU3\"}",
         "payloadType": "json",
-        "x": 1420,
-        "y": 1140,
+        "x": 1980,
+        "y": 1500,
         "wires": [
             [
-                "340618b1.780d28"
+                "bfb0be7f.4e329"
             ]
         ]
     },
     {
-        "id": "28bf7715.dd7878",
+        "id": "c1460959.171bf8",
         "type": "inject",
         "z": "4522fbaa.9cd964",
         "name": "STOP",
@@ -7648,17 +7647,17 @@
         "onceDelay": 0.1,
         "topic": "",
         "payloadType": "str",
-        "x": 1390,
-        "y": 1060,
+        "x": 1950,
+        "y": 1340,
         "wires": [
             [
-                "d956bb53.a64088"
+                "4c73b966.1a89e8"
             ]
         ],
         "icon": "node-red-dashboard/ui_switch.png"
     },
     {
-        "id": "44ef503f.c909d",
+        "id": "41700682.8679b8",
         "type": "change",
         "z": "4522fbaa.9cd964",
         "name": "msg.input",
@@ -7676,16 +7675,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1720,
-        "y": 980,
+        "x": 2280,
+        "y": 1260,
         "wires": [
             [
-                "62e2180a.0d97b8"
+                "fe3d5303.1209e"
             ]
         ]
     },
     {
-        "id": "340618b1.780d28",
+        "id": "bfb0be7f.4e329",
         "type": "change",
         "z": "4522fbaa.9cd964",
         "name": "msg.input",
@@ -7703,16 +7702,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1720,
-        "y": 1140,
+        "x": 2280,
+        "y": 1500,
         "wires": [
             [
-                "62e2180a.0d97b8"
+                "fe3d5303.1209e"
             ]
         ]
     },
     {
-        "id": "d956bb53.a64088",
+        "id": "4c73b966.1a89e8",
         "type": "change",
         "z": "4522fbaa.9cd964",
         "name": "msg.input",
@@ -7730,16 +7729,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1720,
-        "y": 1060,
+        "x": 2280,
+        "y": 1340,
         "wires": [
             [
-                "62e2180a.0d97b8"
+                "fe3d5303.1209e"
             ]
         ]
     },
     {
-        "id": "587a5f6a.fc99c",
+        "id": "b444bc8f.5b4",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_LetzteSignalstaerke",
@@ -7747,14 +7746,14 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2330,
-        "y": 1000,
+        "x": 2890,
+        "y": 1280,
         "wires": [
             []
         ]
     },
     {
-        "id": "de9cc0bf.822b4",
+        "id": "1fc0e5d0.cf773a",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_LetzterPruefStatus",
@@ -7762,14 +7761,14 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2330,
-        "y": 940,
+        "x": 2890,
+        "y": 1220,
         "wires": [
             []
         ]
     },
     {
-        "id": "f2a58ee8.93ff6",
+        "id": "2d5f2f0e.88e7e",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_Modus",
@@ -7777,14 +7776,14 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2290,
-        "y": 1060,
+        "x": 2850,
+        "y": 1340,
         "wires": [
             []
         ]
     },
     {
-        "id": "3a98422e.079c6e",
+        "id": "101c6845.f75b18",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_LetzterSendeStatus",
@@ -7792,14 +7791,14 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2330,
-        "y": 1120,
+        "x": 2890,
+        "y": 1400,
         "wires": [
             []
         ]
     },
     {
-        "id": "27021ddf.5867f2",
+        "id": "c965b7e8.847648",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_SMSEmfangAbsenderID",
@@ -7807,14 +7806,14 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2350,
-        "y": 1180,
+        "x": 2910,
+        "y": 1460,
         "wires": [
             []
         ]
     },
     {
-        "id": "98b3029.1937",
+        "id": "ac0918eb.354e78",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_SMSEmfangText",
@@ -7822,14 +7821,14 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2320,
-        "y": 1240,
+        "x": 2880,
+        "y": 1520,
         "wires": [
             []
         ]
     },
     {
-        "id": "6a02a489.ad39cc",
+        "id": "3e0cdcb7.827574",
         "type": "ccu-sysvar",
         "z": "4522fbaa.9cd964",
         "name": "Messenger_Warteschlange",
@@ -7837,25 +7836,25 @@
         "topic": "ReGaHSS/${Name}",
         "change": false,
         "cache": false,
-        "x": 2320,
-        "y": 1300,
+        "x": 2880,
+        "y": 1580,
         "wires": [
             []
         ]
     },
     {
-        "id": "eb775112.12718",
+        "id": "ad57287e.f7f328",
         "type": "ccu-poll",
         "z": "4522fbaa.9cd964",
         "name": "",
         "script": "",
         "ccuConfig": "38263145.35ea0e",
-        "x": 1550,
-        "y": 1220,
+        "x": 2130,
+        "y": 1560,
         "wires": []
     },
     {
-        "id": "2a3ab357.73d1dc",
+        "id": "6d62effd.05427",
         "type": "ccu-get-value",
         "z": "4522fbaa.9cd964",
         "name": "number",
@@ -7868,16 +7867,16 @@
         "datapointProperty": "value",
         "setProp": "number",
         "setPropType": "msg",
-        "x": 1380,
-        "y": 1340,
+        "x": 1960,
+        "y": 1680,
         "wires": [
             [
-                "f4411c6a.24fbe"
+                "5b60ed37.4f3474"
             ]
         ]
     },
     {
-        "id": "f4411c6a.24fbe",
+        "id": "5b60ed37.4f3474",
         "type": "ccu-get-value",
         "z": "4522fbaa.9cd964",
         "name": "message",
@@ -7890,16 +7889,16 @@
         "datapointProperty": "value",
         "setProp": "message",
         "setPropType": "msg",
-        "x": 1540,
-        "y": 1340,
+        "x": 2120,
+        "y": 1680,
         "wires": [
             [
-                "16d55b11.72fc85"
+                "276d8da.84eee72"
             ]
         ]
     },
     {
-        "id": "efafb463.b938f8",
+        "id": "a9c76b3f.e11e58",
         "type": "inject",
         "z": "4522fbaa.9cd964",
         "name": "Send",
@@ -7915,17 +7914,17 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 1390,
-        "y": 1220,
+        "x": 1970,
+        "y": 1560,
         "wires": [
             [
-                "eb775112.12718",
-                "713e48d6.309bd8"
+                "ad57287e.f7f328",
+                "c772366b.e41ff8"
             ]
         ]
     },
     {
-        "id": "713e48d6.309bd8",
+        "id": "c772366b.e41ff8",
         "type": "delay",
         "z": "4522fbaa.9cd964",
         "name": "500ms",
@@ -7939,16 +7938,16 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1550,
-        "y": 1280,
+        "x": 2130,
+        "y": 1620,
         "wires": [
             [
-                "2a3ab357.73d1dc"
+                "6d62effd.05427"
             ]
         ]
     },
     {
-        "id": "16d55b11.72fc85",
+        "id": "276d8da.84eee72",
         "type": "function",
         "z": "4522fbaa.9cd964",
         "name": "msg.input",
@@ -7957,16 +7956,16 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1720,
-        "y": 1340,
+        "x": 2300,
+        "y": 1680,
         "wires": [
             [
-                "62e2180a.0d97b8"
+                "fe3d5303.1209e"
             ]
         ]
     },
     {
-        "id": "9c9203f7.55b58",
+        "id": "b0e960ec.2af05",
         "type": "ccu-rpc-event",
         "z": "4522fbaa.9cd964",
         "name": "",
@@ -7996,41 +7995,41 @@
         "working": false,
         "cache": false,
         "topic": "${CCU}/${Interface}/${channelName}/${datapoint}",
-        "x": 1380,
-        "y": 1280,
+        "x": 1960,
+        "y": 1620,
         "wires": [
             [
-                "eb775112.12718",
-                "713e48d6.309bd8"
+                "ad57287e.f7f328",
+                "c772366b.e41ff8"
             ]
         ]
     },
     {
-        "id": "8688ee1a.195f",
+        "id": "38d14715.647b38",
         "type": "serial in",
         "z": "4522fbaa.9cd964",
         "name": "Serial-In",
         "serial": "44267baf.756834",
-        "x": 1560,
-        "y": 900,
+        "x": 2120,
+        "y": 1180,
         "wires": [
             [
-                "a334a743.c50048"
+                "8e9b822c.f9eef"
             ]
         ]
     },
     {
-        "id": "f1fb1dd7.d1ff",
+        "id": "e8a5bac1.530c98",
         "type": "serial out",
         "z": "4522fbaa.9cd964",
         "name": "Serail-Out",
         "serial": "44267baf.756834",
-        "x": 2260,
-        "y": 880,
+        "x": 2820,
+        "y": 1160,
         "wires": []
     },
     {
-        "id": "80aa77f0.32d4c8",
+        "id": "9a932896.34e758",
         "type": "template",
         "z": "4522fbaa.9cd964",
         "name": "Systemvariablen",
@@ -8040,30 +8039,30 @@
         "syntax": "mustache",
         "template": "! Zeichenkette\nstring  svName = \"Messenger_SMSEmfangAbsenderID\";\nobject  svObj  = dom.GetObject(svName);\nif (!svObj){   \nobject svObjects = dom.GetObject(ID_SYSTEM_VARIABLES);\nsvObj = dom.CreateObject(OT_VARDP);\nsvObjects.Add(svObj.ID());\nsvObj.Name(svName);   \nsvObj.ValueType(ivtString);\nsvObj.ValueSubType(istChar8859);\nsvObj.DPInfo(\"Absender Telefonnummer empfangene SMS\");\nsvObj.ValueUnit(\"\");\nsvObj.DPArchive(false);\nsvObj.State(\"\");\nsvObj.Internal(false);\nsvObj.Visible(true);\ndom.RTUpdate(0);\n}\n! Zeichenkette\nstring  svName = \"Messenger_SMSNummer\";\nobject  svObj  = dom.GetObject(svName);\nif (!svObj){   \nobject svObjects = dom.GetObject(ID_SYSTEM_VARIABLES);\nsvObj = dom.CreateObject(OT_VARDP);\nsvObjects.Add(svObj.ID());\nsvObj.Name(svName);   \nsvObj.ValueType(ivtString);\nsvObj.ValueSubType(istChar8859);\nsvObj.DPInfo(\"Empfänger Telefonnummer\");\nsvObj.ValueUnit(\"\");\nsvObj.DPArchive(false);\nsvObj.State(\"\");\nsvObj.Internal(false);\nsvObj.Visible(true);\ndom.RTUpdate(0);\n}",
         "output": "str",
-        "x": 1700,
-        "y": 1520,
+        "x": 2260,
+        "y": 1800,
         "wires": [
             [
-                "11bf32c2.cb01ad"
+                "59673057.49cf4"
             ]
         ]
     },
     {
-        "id": "11bf32c2.cb01ad",
+        "id": "59673057.49cf4",
         "type": "ccu-script",
         "z": "4522fbaa.9cd964",
         "name": "Sysvar erstellen",
         "script": "",
         "ccuConfig": "38263145.35ea0e",
         "topic": "${CCU}/${Interface}",
-        "x": 1880,
-        "y": 1520,
+        "x": 2440,
+        "y": 1800,
         "wires": [
             []
         ]
     },
     {
-        "id": "9732dc0c.b8707",
+        "id": "8fee7298.a428f",
         "type": "inject",
         "z": "4522fbaa.9cd964",
         "name": "Systemvariablen anlegen",
@@ -8083,165 +8082,217 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1490,
-        "y": 1520,
+        "x": 2050,
+        "y": 1800,
         "wires": [
             [
-                "80aa77f0.32d4c8"
+                "9a932896.34e758"
             ]
         ]
     },
     {
-        "id": "aedeec50.f7a5",
+        "id": "50b69d0d.2eb2a4",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "1. Fehlende Systemvariablen anlegen",
         "info": "",
-        "x": 1530,
-        "y": 1480,
+        "x": 2090,
+        "y": 1760,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "bc2a010b.d0311",
+        "id": "1408e797.8cc688",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "Neue Systemvariable ->",
         "info": "",
-        "x": 1220,
-        "y": 1340,
+        "x": 1800,
+        "y": 1680,
         "wires": [],
         "icon": "font-awesome/fa-exclamation-triangle"
     },
     {
-        "id": "f55b4bcf.6a0438",
+        "id": "cc13e711.8f6bb8",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "<- Neue Systemvariable",
         "info": "",
-        "x": 2580,
-        "y": 1180,
+        "x": 3140,
+        "y": 1460,
         "wires": [],
         "icon": "font-awesome/fa-exclamation-triangle"
     },
     {
-        "id": "d6a7d53f.d6cf18",
+        "id": "e91ea662.227708",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "TC35 Modul Subflow -> Alternative zum Messenger Addon",
         "info": "Folgende Systemvariable wird nicht mehr bedient:\n\n- Messenger_SMSBefehle",
-        "x": 1510,
-        "y": 820,
+        "x": 2070,
+        "y": 1100,
         "wires": []
     },
     {
-        "id": "d1c92fe4.99788",
+        "id": "d65201e6.e8525",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "2. tty Pfad anpassen \"/ttyUSB0\" oder \"/ttyUSB1\"...",
         "info": "",
-        "x": 1320,
-        "y": 900,
+        "x": 1880,
+        "y": 1180,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "9ca25137.fcae8",
+        "id": "bc0fa506.ca2a78",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "3. Taster auswählen",
         "info": "",
-        "x": 1230,
-        "y": 1280,
+        "x": 1810,
+        "y": 1620,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "86e4a8b.01b7458",
+        "id": "68c11205.d046ac",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "4. Config bearbeiten",
         "info": "",
-        "x": 1990,
-        "y": 1260,
+        "x": 2550,
+        "y": 1540,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "b6ab1445.17e018",
+        "id": "ed4dfe73.18f81",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "5. Empfänger bearbeiten",
         "info": "",
-        "x": 1190,
-        "y": 1140,
+        "x": 1770,
+        "y": 1500,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "aca2d425.230868",
+        "id": "fd85ef9e.dcae5",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "6. SysVar prüfen",
         "info": "",
-        "x": 2520,
-        "y": 940,
+        "x": 3080,
+        "y": 1220,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "1a631401.bb4f7c",
+        "id": "ed839d5c.d9d38",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "7. Fertig zum Start deploy!",
         "info": "",
-        "x": 2350,
-        "y": 1480,
+        "x": 2910,
+        "y": 1760,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "6b1925bc.4664cc",
+        "id": "2bf70678.b7020a",
         "type": "comment",
         "z": "4522fbaa.9cd964",
         "name": "8. Webinterface öffnen unter:   http://IPderCCU/addons/red/TC35",
         "info": "",
-        "x": 2470,
-        "y": 1520,
+        "x": 3030,
+        "y": 1800,
         "wires": [],
         "icon": "font-awesome/fa-exclamation"
     },
     {
-        "id": "62e2180a.0d97b8",
+        "id": "fe3d5303.1209e",
         "type": "subflow:5c14d8ce.7af138",
         "z": "4522fbaa.9cd964",
         "name": "",
-        "x": 1990,
-        "y": 1340,
+        "x": 2550,
+        "y": 1620,
         "wires": [
             [
-                "f1fb1dd7.d1ff"
+                "e8a5bac1.530c98"
             ],
             [
-                "de9cc0bf.822b4"
+                "1fc0e5d0.cf773a"
             ],
             [
-                "587a5f6a.fc99c"
+                "b444bc8f.5b4"
             ],
             [
-                "f2a58ee8.93ff6"
+                "2d5f2f0e.88e7e"
             ],
             [
-                "3a98422e.079c6e"
+                "101c6845.f75b18"
             ],
             [
-                "27021ddf.5867f2"
+                "c965b7e8.847648"
             ],
             [
-                "98b3029.1937"
+                "ac0918eb.354e78"
             ],
             [
-                "6a02a489.ad39cc"
+                "3e0cdcb7.827574"
+            ]
+        ]
+    },
+    {
+        "id": "b327fe32.fe3a2",
+        "type": "inject",
+        "z": "4522fbaa.9cd964",
+        "name": "RESET",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 1950,
+        "y": 1420,
+        "wires": [
+            [
+                "26ec82d8.c525fe"
+            ]
+        ]
+    },
+    {
+        "id": "26ec82d8.c525fe",
+        "type": "change",
+        "z": "4522fbaa.9cd964",
+        "name": "msg.input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "msg.input",
+                "pt": "msg",
+                "to": "RESET",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2280,
+        "y": 1420,
+        "wires": [
+            [
+                "fe3d5303.1209e"
             ]
         ]
     },
