@@ -75,6 +75,9 @@ SMS Webinterface:
 
 ### Changelog:
 
+- V.1.1.0 - Add SIM PIN Show Support
+- V.1.1.0 - correction Provider registration check
+
 - V.1.0.2 - Add SMS API Input
 
 - V.1.0.1 - first publication
