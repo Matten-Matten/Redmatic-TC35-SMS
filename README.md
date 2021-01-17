@@ -4,6 +4,7 @@ Subfow to send and receive SMS
 ![picture](https://cdn.shopify.com/s/files/1/1978/9859/products/img_3048_compact.jpg)
 
 ---
+![Logo](https://homematic-forum.de/forum/styles/prosilver/theme/images/homematic-logo.png)
 
 Forum: https://homematic-forum.de/forum/viewtopic.php?f=77&t=63796&p=628663#p628663
 
